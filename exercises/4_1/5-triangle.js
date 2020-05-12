@@ -9,6 +9,7 @@ Caso os ângulos estejam inválidos, o programa deve retornar uma mensagem de er
 
 let a = 100;
 let b = 20;
-let c = 30;
+let c = 60;
 
-let triangle = (a+b+c == 180) ? (console.log(true)) : (console.log(false));
+let triangle = (a+b+c == 180) ? (true) : (false);
+console.log(triangle);
