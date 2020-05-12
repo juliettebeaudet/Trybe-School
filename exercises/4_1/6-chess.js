@@ -12,9 +12,9 @@ Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
 Exemplo: bishop -> diagonals */
 
 let pieceChess; //bishop, horse, tour
-pieceChess="king";
+pieceChess="Bishop";
 
-switch (pieceChess) {
+switch (pieceChess.toLowerCase()) {
     case 'bishop':
         console.log("diagonals");
         break;
