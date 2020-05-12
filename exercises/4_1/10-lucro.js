@@ -7,28 +7,17 @@ incide um imposto de 20% que deve ser considerado no cálculo do lucro.
 Seu programa também deve emitir uma mensagem de erro e encerrar
 caso algum dos seus valores de entrada seja menor que zero.*/
 
-let custo = 12;
-let venda = 20;
-let lucroBruto = venda - custo;
-let lucroLiquido = (lucroBruto) - (0.2*lucroBruto);
-let calculo = 1000*lucroLiquido;
+let custo = 2;
+let venda = 4;
+let lucroBrutoUnidade = venda - custo;
+let lucroLiquido = (lucroBrutoUnidade) - (0.2*lucroBrutoUnidade); //podia ser também *0.8
+let calculoLucroLiquidoMil = 1000*lucroLiquido;
 
-if (custo > 0 || venda > 0) {
-    console.log(calculo);
+if (custo > 0 && venda > 0) {
+    console.log(calculoLucroLiquidoMil);
 }
 else {
     console.log("erro");
 }
 
-
-
-switch (lucroLiquido) {
-    case (custo > 0 || venda > 0):
-        console.log(calculo);
-        break;
-    default:
-        console.log("Error, closing");
-        break;
-}
-
-
+//"e encerrar" é apenas encerrar o fluxo
