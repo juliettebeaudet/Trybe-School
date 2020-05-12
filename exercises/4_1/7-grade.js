@@ -10,28 +10,31 @@ O programa deve retornar uma mensagem de erro e encerrar se a nota passada
 for menor que 0 ou maior que 100.*/
 
 let grade; //qualquer num
-grade = 12;
+grade = 62;
 
-switch (grade) {
-    case (grade >= 90):
-        grade = "A";
-        break;
-    case (grade >= 80 && grade < 90):
-        grade = "B";
-        break;
-    case (grade >= 70 && grade < 80):
-        grade = "C";
-        break;
-    case (grade >= 60 && grade < 70):
-        grade = "D";
-        break;
-    case (grade >= 50 && grade < 60):
-        grade = "E";
-        break;
-    case (grade < 50):
-        grade = "F";
-        break;
-    case (grade < 0 || grade > 100):
-        console.log("Erro");
-        break;
+if (grade >= 90 && grade <= 100) {
+    console.log("A");
+}
+else if
+    (grade >= 80 && grade < 90) {
+    console.log("B");
+}
+else if
+    (grade >= 70 && grade < 80) {
+    console.log("C");
+}
+else if
+    (grade >= 60 && grade < 70) {
+    console.log("D");
+}
+else if
+    (grade >= 50 & grade < 60) {
+    console.log("E");
+}
+else if
+    (grade < 50 && grade >= 0) {
+    console.log("F");
+}
+else {
+    console.log("erro, essa nota nem existe")
 }
