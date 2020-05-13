@@ -9,8 +9,13 @@ for (i = 0; i < numbers.length; i++) {
         numValoresImpares ++;
     }
 }
-
+if (numValoresImpares == 0){
+    console.log("nenhum valor ímpar encontrado");
+}
+else {
     console.log(numValoresImpares);
+}
+
 
 
 
