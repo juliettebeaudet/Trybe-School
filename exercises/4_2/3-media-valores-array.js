@@ -7,5 +7,5 @@ let soma = 0;
 for (i=0; i<numbers.length; i++) {
     soma += numbers[i];
 }
-console.log(soma / numbers.length-1);
+console.log(soma / numbers.length);
 

@@ -9,7 +9,7 @@ for (i=0; i<numbers.length; i++) {
     soma += numbers[i];
 }
 
-let result = soma/numbers.length-1;
+let result = soma/numbers.length;
 
 let mensagem = (result > 20) ? (console.log("valor maior que 20")) : (console.log("valor menor ou igual a 20"));
 ;
