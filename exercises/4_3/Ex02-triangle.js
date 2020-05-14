@@ -15,13 +15,28 @@ iterar esse array até 5 posiçoes
 criar uma var de string que vai receber uma estrela a cada iteraçao ou seja cada 
 valor de array (todas sao *) durante 5 repetiçoes
 colocar o console dentro do for para ter essa progressao de imprimir de 1* a 5*
-3) codificar o algoritmo como segue: */
+3) codificar o algoritmo como segue: 
 
 let stars = ['*','*','*','*','*','*','*'];
-var moreStars = "";
+let moreStars = "";
+let n=5;
 
-for (i=1; i<6; i += 1) {
+for (i=0; i<n; i += 1) {
     moreStars += stars[i];
 console.log(moreStars);
 }
+
+Essa funciona!
+Mas achei outro jeito de fazer sem array */ 
+
+let lineStars='';
+let n = 5;
+
+for (let i=0; i<n; i+=1) {
+    lineStars += '*';
+    console.log(lineStars);
+
+    }
+
+
 
