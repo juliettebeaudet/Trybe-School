@@ -1,21 +1,20 @@
 /*1- Para o primeiro exercício de hoje, faça um programa que, dado um valor n qualquer,
-seja n > 1, imprima na tela um quadrado feito de asteriscos de lado de tamanho n. */
-
-/* Desenhando os Baby steps
-1) interpretar
-Queremos o resultado seguinte
+seja n > 1, imprima na tela um quadrado feito de asteriscos de lado de tamanho n. 
 *****
 *****
 *****
 *****
 *****
 (aqui com n=5 mas pode ser qualquer)
-O quadro vai em dois eixos de tamanho igual. n para direita, n para baixo.
-Vai precisar um array iterado.
-O numero de elemento do array vai ter que ser igual ao numero de iteraçoes
-para imprimir mais linhas.
-Vai precisar de uma var que vai ser aumentada com todos esses * . 
-imprimir no final vai ser com console.log
+Desenhando os Baby steps
+1) interpretar: array de *, for com n>1, outra var, console
+2) algoritmo
+declarar array com estrelas
+iterar esse array até 5 posiçoes
+criar uma var de string que vai receber uma estrela a cada iteraçao ou seja cada 
+valor de array (todas sao *) durante 5 repetiçoes
+colocar o console dentro do for para ter essa progressao de imprimir de 1* a 5*
+3) codificar o algoritmo como segue:
 
 2) algoritmo
 definir array com estrelas
@@ -29,7 +28,7 @@ correspondendo com o length desse array, indo cada vez na linha
 let stars = ['*','*','*','*','*','*','*'];
 var moreStars = "";
 
-for (i=0; i<5; i += 1) {
+for (i=1; i<6; i += 1) {
     moreStars += stars[i];
 console.log(moreStars);
 }
