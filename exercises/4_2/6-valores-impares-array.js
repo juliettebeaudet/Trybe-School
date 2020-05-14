@@ -16,6 +16,15 @@ else {
     console.log(numValoresImpares);
 }
 
+/* Baby steps
+Jà temos o array definido.
+Vamos precisar percorrer o array para testar a cada valor se é par ou nao, entao tem um for.
+Vamos ter que ficar contando isso, entao tem que criar uma var vazia numérica.
+A cada iteraçao, tem que testar se (if) o valor é par ou nao. Caso sim, é +1 valor
+contado na var vazia. Nao precisa de 'caso nao' pois acontece nada.
+Se essa contagem for vazia, vai ter a mensagem. Se nao for vazia, vai imprimir a var que é 
+a contagem final.
+ */
 
 
 
