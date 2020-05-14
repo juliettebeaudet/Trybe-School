@@ -10,3 +10,7 @@ for (i=0; i<numbers.length; i++) {
 }
 
 console.log(menorNum);
+
+/* Baby steps
+Aqui, foi apenas substituir o sinal > por < porque jà fizemos todos os passos no ex 5.
+ */
