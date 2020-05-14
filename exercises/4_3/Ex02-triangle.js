@@ -20,7 +20,7 @@ colocar o console dentro do for para ter essa progressao de imprimir de 1* a 5*
 let stars = ['*','*','*','*','*','*','*'];
 var moreStars = "";
 
-for (i=0; i<5; i += 1) {
+for (i=1; i<6; i += 1) {
     moreStars += stars[i];
 console.log(moreStars);
 }
