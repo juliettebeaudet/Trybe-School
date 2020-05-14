@@ -14,3 +14,7 @@ let result = soma/numbers.length;
 let mensagem = (result > 20) ? (console.log("valor maior que 20")) : (console.log("valor menor ou igual a 20"));
 ;
 
+/* Baby steps
+Todos os passos anteriores, pode copiar/colar
+o "caso" indica que vai precisar de um if sobre se o resultado é maior ou nao que 20.
+Dava para fazer mais eficiente neste if simples e sem if else, entao foi um ternario. */
