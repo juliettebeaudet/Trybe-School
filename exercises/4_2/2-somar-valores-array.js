@@ -9,4 +9,9 @@ for (i=0; i<numbers.length; i++) {
 }
 console.log(soma);
 
-
+/* Baby steps
+Ter o array
+Percorrer todos os elementos do array com um for
+Criar uma nova var que vai receber a soma
+Cada vez que é percorrido, deve adicionar o proximo valor do array nessa var soma
+Imprimir o resultado quer dizer introduzir um console.log, mas fora do for*/
