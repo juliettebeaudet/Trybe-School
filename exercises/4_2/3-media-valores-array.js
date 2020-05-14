@@ -9,3 +9,8 @@ for (i=0; i<numbers.length; i++) {
 }
 console.log(soma / numbers.length);
 
+/* Baby steps
+Ter o array
+Ter o for etc para conseguir a soma desse array (mesma coisa que ex anterior)
+Em vez de imprimir a soma, imprimir a soma dividida 
+pelo numero de elementos no array ou seja o length */
