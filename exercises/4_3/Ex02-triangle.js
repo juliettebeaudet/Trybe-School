@@ -38,5 +38,8 @@ for (let i=0; i<n; i+=1) {
 
     }
 
-
-
+/* para cada repeticao, adicionar um * na linha.
+e para cada repeticao, imprimir o resultado. 
+Ou seja, primeira repeticao imprime *, a segunda ** etc, 
+arrumar para ter 5 repeticoes no total.
+*/
