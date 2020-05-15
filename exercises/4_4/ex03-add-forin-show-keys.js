@@ -1,4 +1,4 @@
-
+//Faça um for/in que mostre todas as chaves do objeto.
 
 let info = {
     personagem: "Margarida",
