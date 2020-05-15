@@ -13,15 +13,11 @@ Babysteps do algoritmo
 de string a versao invertida
 - escrever um console que, se essas duas var fossem iguais, mostra true, else, false.
 */
-
-let word = "kayak"; //aqui escreve a palavra a ser testada
+function verificaPalindrome(word){
 let reverseWord = "";
-
-function verificaPalindrome(){
 for (let i = word.length-1; i>=0; i -= 1){
 reverseWord += word[i];
 }
-
 if (word == reverseWord){
     return true
 }
@@ -29,4 +25,4 @@ if (word == reverseWord){
     return false
     }
 }
-console.log(verificaPalindrome());
+console.log(verificaPalindrome("kayak"));//aqui escreve a palavra a ser testada
