@@ -45,25 +45,26 @@ let equivalence = {
     D: 500,
     M: 1000
 }
-function turnRomanintoNumber(roman){
-    let arrayNumbers= []; //testado: funcionou, resulta em [5,1] para "VI")
-    let finalNumber= 0;
+function turnRomanintoNumber(roman) {
+    let arrayNumbers = []; //testado: funcionou, resulta em [5,1] para "VI")
+    let finalNumber = 0;
 
-    for (i=0; i<roman.length; i+=1){
-arrayNumbers.push (equivalence[roman[i]]);
+    for (i = 0; i < roman.length; i += 1) {
+        arrayNumbers.push(equivalence[roman[i]]);
     }
 
-    for (j=0; arrayNumbers.length; j+=1){ //agora tem que percorrer e condicionar esse array para transformar em num inteiro;
-if (arrayNumbers[j] > arrayNumbers[j+1]){
-    finalNumber += arrayNumbers[j];
-}
-    }
-
-
-return finalNumber;
+    // for (j = 0; arrayNumbers.length; j += 1) { //agora tem que percorrer
+    //     //e condicionar esse array para transformar em num inteiro
+    //     if (arrayNumbers[j] > arrayNumbers[j + 1]) {
+    //         finalNumber = arrayNumbers[j] + arrayNumbers[j + 1];
+    //     }
+    //     else {
+    //         finalNumber = arrayNumbers[j + 1] - arrayNumbers[j];
+    //     }
+    //     //problem: this would work only for a two-digit roman number!
+    // }
+    // return finalNumber;
+    return arrayNumbers;
 }
 console.log(turnRomanintoNumber('VI'));
-
-
-
-
+console.log(turnRomanintoNumber('CIX'));
