@@ -20,7 +20,7 @@ Dois for:
 1 que vai imprimindo os espaços do maior para o menor
 Outro que reusa o trabalho precedente com os asteriscos
 um console.log que concatena as duas var geradas?
-3) Colocando no codigo, graças a correçao de outro aluno:*/
+3) Colocando no codigo, graças a gabarito de outro aluno:*/
 
 let n = 5;
 for (k=1;k<=n;k+=1){
