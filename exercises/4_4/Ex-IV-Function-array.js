@@ -2,16 +2,17 @@
 // Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];.
 // Valor esperado no retorno da função: Fernanda.
 
-let arrayForTest = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairooooooo', 'Joana'];
+// let arrayForTest = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairooooooo', 'Joana'];
+
+let arrayTest = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Caiiiirooooooo', 'Joana'];
+
 function longestName(array) {
-    let index = 0;
+    let longName = array[0];
     for (let i = 0; i < array.length; i += 1) {
-        let array1 = "" + array[i];
-        let array2 = "" + array[i+1];
-        if (array1.length > array2.length) {
-            index = i;
+        if (array[i].length > longName.length) {
+            longName = array[i];
         }
     }
-    return array[index];
+    return longName;
 }
-console.log(longestName(arrayForTest));
+console.log(longestName(arrayTest));
