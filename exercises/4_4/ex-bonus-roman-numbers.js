@@ -48,23 +48,26 @@ let equivalence = {
 function turnRomanintoNumber(roman) {
     let arrayNumbers = []; //testado: funcionou, resulta em [5,1] para "VI")
     let finalNumber = 0;
-
-    for (i = 0; i < roman.length; i += 1) {
+    for (let i = 0; i < roman.length; i += 1) {
         arrayNumbers.push(equivalence[roman[i]]);
+    } //agora temos o array que traduziu de romano para inteiro.
+    //agora tem que percorrer e condicionar o output:
+    for (let j = 0; j < arrayNumbers.length; j += 1) {
+        if (j < arrayNumbers.length - 1) { //pois nao pode passar do penultimo senao j+1 erra)
+            if (arrayNumbers[j] >= arrayNumbers[j + 1]) {// tem que ser igual ou superior para nao zerar duplas duplas
+                finalNumber += arrayNumbers[j];
+            }
+            else {
+                finalNumber -= arrayNumbers[j];
+            }
+        }
+        else {
+            finalNumber += arrayNumbers[j];
+        }
     }
-
-    // for (j = 0; arrayNumbers.length; j += 1) { //agora tem que percorrer
-    //     //e condicionar esse array para transformar em num inteiro
-    //     if (arrayNumbers[j] > arrayNumbers[j + 1]) {
-    //         finalNumber = arrayNumbers[j] + arrayNumbers[j + 1];
-    //     }
-    //     else {
-    //         finalNumber = arrayNumbers[j + 1] - arrayNumbers[j];
-    //     }
-    //     //problem: this would work only for a two-digit roman number!
-    // }
-    // return finalNumber;
-    return arrayNumbers;
+    return finalNumber;
 }
 console.log(turnRomanintoNumber('VI'));
 console.log(turnRomanintoNumber('CIX'));
+console.log(turnRomanintoNumber('DXIX'));
+console.log(turnRomanintoNumber('MMXX'));
