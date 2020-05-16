@@ -6,7 +6,7 @@
 
 function accumulation(n){
     let accumulatedNumber = 0; 
-    for (let i=0; i<n; i+=1){
+    for (let i=1; i<=n; i+=1){
 accumulatedNumber += i;
     }
     return accumulatedNumber;
