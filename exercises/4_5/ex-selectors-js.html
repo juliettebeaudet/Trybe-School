@@ -70,14 +70,26 @@
     }
     checkTextH("Exercício 4.5 - JavaScript");
 
-        // 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-    function pToUpperCase (upper){
-      document.getElementsByTagName("p")[0].innerHTML = upper;
+    // 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+    // function pToUpperCase(upper) {
+    //   document.getElementsByTagName("p")[0].innerHTML = upper;
+    // }
+    // pToUpperCase("blabla testar".toUpperCase())
+    // (isso mudava apenas uma p em vez de todas)
+    function allCaps(tag) {
+      for (i = 0; i < document.getElementsByTagName(tag).length; i += 1) {
+        document.getElementsByTagName(tag)[i].innerHTML = document.getElementsByTagName(tag)[i].innerHTML.toUpperCase();
+      }
     }
-    pToUpperCase("blabla testar".toUpperCase())
-    
-        // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+    allCaps("p");
 
+    // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+    function showAllP(tag) {
+      for (i = 0; i < document.getElementsByTagName(tag).length; i += 1) {
+        console.log(document.getElementsByTagName(tag)[i].innerHTML); 
+      }
+    }
+    console.log(showAllP("p"));
   </script>
 </body>
 
