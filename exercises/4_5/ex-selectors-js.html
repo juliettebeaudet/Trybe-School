@@ -63,12 +63,19 @@
       otherSquare.style.backgroundColor = "" + color2;
     }
     changeColor("green", "white");
+
     // 4. Crie uma função que corrija o texto da tag <h1>.
     function checkTextH(htext) {
       document.getElementsByTagName("h1")[0].innerHTML = htext;
     }
     checkTextH("Exercício 4.5 - JavaScript");
+
         // 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+    function pToUpperCase (upper){
+      document.getElementsByTagName("p")[0].innerHTML = upper;
+    }
+    pToUpperCase("blabla testar".toUpperCase())
+    
         // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 
   </script>
