@@ -54,18 +54,20 @@
     }
     changeText("Em dois anos, gostaria de conseguir ser freelance e trabalhar à distância desde minhas montanhas");
 
-        // 2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe.
-        // 3. Crie uma função que mude a cor do quadrado vermelho para branco.
-        function changeColor(color1, color2) {
-          let square = document.getElementsByClassName("main-content")[0];
-          square.style.backgroundColor= ""+color1;
-          let otherSquare = document.getElementsByClassName("center-content")[0];
-          otherSquare.style.backgroundColor= ""+color2; 
-        }
-        changeColor("green", "white");
-
-
-        // 4. Crie uma função que corrija o texto da tag <h1>.
+    // 2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe.
+    // 3. Crie uma função que mude a cor do quadrado vermelho para branco.
+    function changeColor(color1, color2) {
+      let square = document.getElementsByClassName("main-content")[0];
+      square.style.backgroundColor = "" + color1;
+      let otherSquare = document.getElementsByClassName("center-content")[0];
+      otherSquare.style.backgroundColor = "" + color2;
+    }
+    changeColor("green", "white");
+    // 4. Crie uma função que corrija o texto da tag <h1>.
+    function checkTextH(htext) {
+      document.getElementsByTagName("h1")[0].innerHTML = htext;
+    }
+    checkTextH("Exercício 4.5 - JavaScript");
         // 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
         // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 
