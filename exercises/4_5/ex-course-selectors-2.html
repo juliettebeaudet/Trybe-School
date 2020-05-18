@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- creating the squares and columns divs -->
+<div id="stack">
+	<div class="column_left"> 
+		<div>
+        	<div>	
+			</div>
+    	</div>
+    	<div>
+        	<div></div>
+    	</div>
+ 	</div>
+ 	<div class="column_right">
+    	<div>
+        	<div>	
+			</div>
+    	</div>
+    	<div>
+        	<div>
+			</div>
+    	</div>
+  	</div>
+</div>
+<style>
+
+
+
+#stack{
+	height:20rem;
+	width:20rem;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	align-items:center;
+	border: solid black 4px;
+}
+
+.column_left, .column_right{
+	
+    height:18rem;
+	width:8rem;
+    margin:auto;
+	display:flex;
+	flex-direction:column;
+    justify-content:space-evenly;
+    border: solid black 4px;
+    }
+.column_left>div, .column_right>div{
+	height:5rem;
+	width:5rem ;
+	display:flex;
+	align-items:center;
+    justify-content:center;
+    margin:auto;
+    border: solid black 4px;
+}  
+
+div>div>div>div{
+    height:2.5rem;
+	width:2.5rem; 
+    border: solid black 4px;
+}
+
+
+
+</style>
+<script>
+
+//Styling the big red square by getElementBy 
+var stack=document.getElementById("stack")
+stack.style.backgroundColor="red"
+
+//Styling the columns by getElementsByClassName
+function style_column(column_position, color){
+    var column=document.getElementsByClassName("column_"+column_position)[0]
+	column.style.backgroundColor=""+color
+}
+
+//Styling the violet and purple square by querySelectorAll 
+function style_big_squares(which_column_class_name, color){
+    document.querySelectorAll(which_column_class_name+"> div").forEach((e)=>{
+	e.style.backgroundColor=""+color
+})}
+
+//Using functions
+style_column("left","blue")
+style_column("right","green")
+
+style_big_squares(".column_left", "violet")
+style_big_squares(".column_right", "purple")
+//stying pink squares inside the violet and purple squares
+
+//Styling all mini divis
+document.querySelectorAll("div>div>div>div").forEach((mini)=>{
+	mini.style.backgroundColor="orange"
+})
+//Styling only mini divs on the top
+document.querySelectorAll("#stack>div").forEach((e)=>{
+    var mini_top=document.querySelector("."+e.className+">div>div")
+	mini_top.style.backgroundColor="pink"
+
+})
+
+</script>
+
+</body>
+</html>
