@@ -38,6 +38,13 @@
     <div class="center-content">
       <p>Texto padrão do nosso site</p>
       <p>-----</p>
+      <ul>
+        <li>liberdade de sair da cidade;</li>
+        <li>trabalho remoto;</li>
+        <li>nomadismo digital;</li>
+        <li>ainda com inserção boa no mercado;</li>
+        <li>com poder de escolha dos projetos mais lindos.</li>
+      </ul>
       <p>Trybe</p>
     </div>
   </div>
@@ -86,10 +93,32 @@
     // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     function showAllP(tag) {
       for (i = 0; i < document.getElementsByTagName(tag).length; i += 1) {
-        console.log(document.getElementsByTagName(tag)[i].innerHTML); 
+        console.log(document.getElementsByTagName(tag)[i].innerHTML);
       }
     }
-    console.log(showAllP("p"));
+    showAllP("p");
+
+    // Criar uma lista (ul, li) dinâmica:
+    // Os itens com índice par devem receber a classe par;
+    // Os itens com índice impar devem receber a classe impar;
+    // O último item da lista deve conter as classes impar e par.
+    function listClassOddOrNot(tag) {
+      for (i = 0; i < document.getElementsByTagName(tag).length - 1; i += 1) {
+        if (i % 2 == 0) {
+          document.getElementsByTagName(tag)[i].className = "par";
+        }
+        else {
+          document.getElementsByTagName(tag)[i].className = "impar";
+        }
+      }
+      for (i = 0; i < document.getElementsByTagName(tag).length; i += 1) {
+        if (i == document.getElementsByTagName(tag).length - 1) {
+          document.getElementsByTagName(tag)[i].className = "par";
+          document.getElementsByTagName(tag)[i].className += " impar";
+        }
+      }
+    }
+      listClassOddOrNot("li");
   </script>
 </body>
 
