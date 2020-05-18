@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício 4.5</title>
+
+  <style>
+    div {
+      border-color: black;
+      border-style: solid;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .main-content {
+      background-color: yellow;
+    }
+
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .main-content .center-content p {
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="title">Exercício 4.4 - JavaEscripito </h1>
+  <div class="main-content">
+    <div class="center-content">
+      <p>Texto padrão do nosso site</p>
+      <p>-----</p>
+      <ul>
+        <li>liberdade de sair da cidade;</li>
+        <li>trabalho remoto;</li>
+        <li>nomadismo digital;</li>
+        <li>ainda com inserção boa no mercado;</li>
+        <li>com poder de escolha dos projetos mais lindos.</li>
+      </ul>
+      <p>Trybe</p>
+    </div>
+  </div>
+  <script>
+    /*
+    Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+    - document.getElementById()
+    - document.getElementsByClassName()
+    - document.getElementsByTagName()
+    1. Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+    */
+    function changeText(text) {
+      document.getElementsByTagName("p")[1].innerHTML = text;
+    }
+    changeText("Em dois anos, gostaria de conseguir ser freelance e trabalhar à distância desde minhas montanhas");
+
+    // 2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe.
+    // 3. Crie uma função que mude a cor do quadrado vermelho para branco.
+    function changeColor(color1, color2) {
+      let square = document.getElementsByClassName("main-content")[0];
+      square.style.backgroundColor = "" + color1;
+      let otherSquare = document.getElementsByClassName("center-content")[0];
+      otherSquare.style.backgroundColor = "" + color2;
+    }
+    changeColor("green", "white");
+
+    // 4. Crie uma função que corrija o texto da tag <h1>.
+    function checkTextH(htext) {
+      document.getElementsByTagName("h1")[0].innerHTML = htext;
+    }
+    checkTextH("Exercício 4.5 - JavaScript");
+
+    // 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+    // function pToUpperCase(upper) {
+    //   document.getElementsByTagName("p")[0].innerHTML = upper;
+    // }
+    // pToUpperCase("blabla testar".toUpperCase())
+    // (isso mudava apenas uma p em vez de todas)
+    function allCaps(tag) {
+      for (i = 0; i < document.getElementsByTagName(tag).length; i += 1) {
+        document.getElementsByTagName(tag)[i].innerHTML = document.getElementsByTagName(tag)[i].innerHTML.toUpperCase();
+      }
+    }
+    allCaps("p");
+
+    // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+    function showAllP(tag) {
+      for (i = 0; i < document.getElementsByTagName(tag).length; i += 1) {
+        console.log(document.getElementsByTagName(tag)[i].innerHTML);
+      }
+    }
+    showAllP("p");
+
+    // Criar uma lista (ul, li) dinâmica:
+    // Os itens com índice par devem receber a classe par;
+    // Os itens com índice impar devem receber a classe impar;
+    // O último item da lista deve conter as classes impar e par.
+    function listClassOddOrNot(tag) {
+      for (i = 0; i < document.getElementsByTagName(tag).length - 1; i += 1) {
+        if (i % 2 == 0) {
+          document.getElementsByTagName(tag)[i].className = "par";
+        }
+        else {
+          document.getElementsByTagName(tag)[i].className = "impar";
+        }
+      }
+      for (i = 0; i < document.getElementsByTagName(tag).length; i += 1) {
+        if (i == document.getElementsByTagName(tag).length - 1) {
+          document.getElementsByTagName(tag)[i].className = "par";
+          document.getElementsByTagName(tag)[i].className += " impar";
+        }
+      }
+    }
+      listClassOddOrNot("li");
+  </script>
+</body>
+
+</html>
