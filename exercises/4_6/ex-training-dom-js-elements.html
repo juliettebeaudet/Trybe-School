@@ -73,28 +73,29 @@
     // Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
     let centerDiv = document.createElement("div");
     centerDiv.className = "center-content";
-    document.querySelector(".primeiraDiv").appendChild(centerDiv);
+    document.querySelector(".main-content").appendChild(centerDiv);
 
     // // Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
-    // let p = document.createElement("p");
-    // p.innerHTML = "imagem sorpresa!";
-    // document.querySelector("div").appendChild(p);
+    let p = document.createElement("p");
+    p.innerHTML = "imagem sorpresa!";
+    document.querySelector(".center-content").appendChild(p);
 
     // Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
-    // let subdiv2 = document.createElement("div");
-    // subdiv2.className = "left-content";
-    // document.querySelector(".primeiraDiv").appendChild(subdiv2);
+    let leftDiv = document.createElement("div");
+    leftDiv.className = "left-content";
+    document.querySelector(".main-content").appendChild(leftDiv);
 
     // // Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
-    // let subdiv3 = document.createElement("div");
-    // subdiv3.className = "right-content";
-    // document.querySelector(".primeiraDiv").appendChild(subdiv3);
+    let rightDiv = document.createElement("div");
+    rightDiv.className = "right-content";
+    document.querySelector(".main-content").appendChild(rightDiv);
 
     // // Adicione uma imagem com src configurado para o valor https://picsum.photos/200
     // //e classe small-image. Esse elemento deve ser filho do div criado no passo 5 (left-content);
-    // let img = document.createElement("img");
-    // img.src = "https://picsum.photos/200";
-    // document.querySelector(".subdiv2").appendChild(img);
+    let imagem = document.createElement("img");
+    imagem.className = "small-image";
+    imagem.src = "https://picsum.photos/200";
+    document.querySelector(".left-content").appendChild(imagem);
 
     // // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, 
     // //ou seja, um, dois, três, … como valores da lista. 
@@ -103,22 +104,14 @@
     // ul.className = "lista"
     // document.querySelector("subdiv3").appendChild(ul);
 
-    // function creatingCountingList(ul) {
-    //   for (i = u.firstChild; i < 11; i += 1) {
-    //     let li = document.createElement("li");
-    //     li.innerHTML = "i";
-        
-    //   }
-    //   document.querySelector("ul").appendChild(li);
-    // }
-    
-    // function countChildNodes(parent) {
-    //     let count = 0;
-    //     for (let child = parent.firstChild; child != null; child = child.nextSibling) {
-    //       count++;
+    // let ul = document.createElement("ul");
+    //     array = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+    //     for (var i = 0; i < array.length; i++) {
+    //         let li = document.createElement("li");
+    //         ul.appendChild(li);
+    //         li.innerHTML = li.innerHTML + array[i];
     //     }
-    //     return count;
-    //   }
+    //     divRightContent.appendChild(ul);
 
 
 // Adicione 3 tags h3, todas sendo filhas do div criado no passo 2.
