@@ -34,22 +34,33 @@ document.getElementById("primeiroFilhoDoFilho").innerHTML = "blabla";
 // Acesse o primeiroFilho a partir de pai.
 console.log(document.getElementById("pai").firstElementChild);
 // Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
-console.log(document.querySelector("#elementoOndeVoceEsta").previousSibling.previousSibling);
+console.log(document.querySelector("#elementoOndeVoceEsta").previousElementSibling);
 // Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
 console.log(document.querySelector("#elementoOndeVoceEsta").nextSibling);
 // Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
-console.log(document.querySelector("#elementoOndeVoceEsta").nextSibling.nextSibling);
+console.log(document.querySelector("#elementoOndeVoceEsta").nextElementSibling);
 // Agora acesse o terceiroFilho a partir de pai.
 console.log(document.querySelector("#pai").childNodes[5]);
 
 // CRIANDO ELEMENTOS
-// Crie um irmão para elementoOndeVoceEsta.
-let novoIrmao = document.createElement("p");
-p.innerHTML="novo irmao do elementoOndevcesta!";
-document.getElementById("pai").appendChild(novoIrmao);
+// Crie um irmão para elementoOndeVoceEsta. (ou seja um child para o mesmo pai)
+let div = document.createElement("div");
+div.id = "quintoFilho";
+document.getElementById("pai").appendChild(div);
+console.log(div);
 // Crie um filho para elementoOndeVoceEsta.
+let p = document.createElement("p");
+p.id = "terceiroFilhoDoFilho";
+document.getElementById("elementoOndeVoceEsta").appendChild(p);
+console.log(p);
 // Crie um filho para primeiroFilhoDoFilho.
+let p2 = document.createElement("p2");
+p2.id = "primeiroFilhoDoFilhDoFilho";
+document.getElementById("primeiroFilhoDoFilho").appendChild(p2);
+console.log(p2);
 // A partir desse filho criado, acesse terceiroFilho.
+console.log(document.querySelector("#primeiroFilhoDoFilhDoFilho").parentNode.parentNode.nextElementSibling);
+
 
 // REMOVENDO ELEMENTOS
 // Remova todos os elementos da página,
