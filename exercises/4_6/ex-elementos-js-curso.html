@@ -23,8 +23,35 @@
 </div>
 
 <script>
+  //BUSCANDO ELEMENTOS
+// Acesse o elemento elementoOndeVoceEsta.
+// Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+let newColor = document.querySelector("#elementoOndeVoceEsta").parentNode ;
+newColor.style.color = "red";
+// Acesse o primeiroFilhoDoFilho e adicione um texto a ele.
+//Você se lembra dos vídeos da aula anterior, como fazer isso?
+document.getElementById("primeiroFilhoDoFilho").innerHTML = "blabla";
+// Acesse o primeiroFilho a partir de pai.
+console.log(document.getElementById("pai").firstElementChild);
+// Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+console.log(document.querySelector("#elementoOndeVoceEsta").previousSibling.previousSibling);
+// Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
+console.log(document.querySelector("#elementoOndeVoceEsta").nextSibling);
+// Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
+console.log(document.querySelector("#elementoOndeVoceEsta").nextSibling.nextSibling);
+// Agora acesse o terceiroFilho a partir de pai.
+console.log(document.querySelector("#pai").childNodes[5]);
 
-  
+// CRIANDO ELEMENTOS
+// Crie um irmão para elementoOndeVoceEsta.
+// Crie um filho para elementoOndeVoceEsta.
+// Crie um filho para primeiroFilhoDoFilho.
+// A partir desse filho criado, acesse terceiroFilho.
+
+// REMOVENDO ELEMENTOS
+// Remova todos os elementos da página,
+// menos pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+
 </script>
 
 </body>
