@@ -1,73 +1,140 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Exercício 4.5</title>
-    <style>
-      div {
-        border-color: black;
-        border-style: solid;
-      }
-      .title {
-        text-align: center;
-      }
 
-      .main-content {
-        background-color: yellow;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício 4.5</title>
+  <style>
+    div {
+      border-color: black;
+      border-style: solid;
+    }
 
-      .main-content .center-content {
-        background-color: red;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    .title {
+      text-align: center;
+    }
 
-      .main-content .center-content p {
-        font-style: italic;
-      }
+    .main-content {
+      background-color: yellow;
+    }
 
-      .main-content .left-content {
-        background-color: green;
-        width: 60%;
-        margin-left: 0;
-        margin-right: auto;
-      }
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-      .main-content .left-content .small-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 100%;
-      }
+    .main-content .center-content p {
+      font-style: italic;
+    }
 
-      .main-content .right-content {
-        background-color: blue;
-        width: 60%;
-        margin-left: auto;
-        margin-right: 0;
-      }
+    .main-content .left-content {
+      background-color: green;
+      width: 60%;
+      margin-left: 0;
+      margin-right: auto;
+    }
 
-      .main-content .description {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <script>
-      // COLOQUE SEU CÓDIGO AQUI
-// Adicione a tag h1 com o texto Exercício 4.5 - JavaScript DOM como filho da tag body;
-// Adicione a tag div com a classe main-content como filho da tag body;
-// Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
-// Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
-// Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
-// Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
-// Adicione uma imagem com src configurado para o valor https://picsum.photos/200
-//e classe small-image. Esse elemento deve ser filho do div criado no passo 5;
+    .main-content .left-content .small-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+    }
 
-// Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, … como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+    .main-content .right-content {
+      background-color: blue;
+      width: 60%;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .main-content .description {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    // COLOQUE SEU CÓDIGO AQUI
+    // Adicione a tag h1 com o texto Exercício 4.5 - JavaScript DOM como filho da tag body;
+    let h1 = document.createElement("h1");
+    h1.innerHTML = "Exercício 4.6 - JavaScript DOM";
+    document.querySelector("body").appendChild(h1);
+
+    // Adicione a tag div com a classe main-content como filho da tag body;
+    let primeiraDiv = document.createElement("div");
+    primeiraDiv.className = "main-content";
+    document.querySelector("body").appendChild(primeiraDiv);
+
+    // Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+    let centerDiv = document.createElement("div");
+    centerDiv.className = "center-content";
+    document.querySelector(".primeiraDiv").appendChild(centerDiv);
+
+    // // Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+    // let p = document.createElement("p");
+    // p.innerHTML = "imagem sorpresa!";
+    // document.querySelector("div").appendChild(p);
+
+    // Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
+    // let subdiv2 = document.createElement("div");
+    // subdiv2.className = "left-content";
+    // document.querySelector(".primeiraDiv").appendChild(subdiv2);
+
+    // // Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
+    // let subdiv3 = document.createElement("div");
+    // subdiv3.className = "right-content";
+    // document.querySelector(".primeiraDiv").appendChild(subdiv3);
+
+    // // Adicione uma imagem com src configurado para o valor https://picsum.photos/200
+    // //e classe small-image. Esse elemento deve ser filho do div criado no passo 5 (left-content);
+    // let img = document.createElement("img");
+    // img.src = "https://picsum.photos/200";
+    // document.querySelector(".subdiv2").appendChild(img);
+
+    // // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, 
+    // //ou seja, um, dois, três, … como valores da lista. 
+    // //Essa lista deve ser filha do div criado no passo 6;
+    // let ul = document.createElement("ul");
+    // ul.className = "lista"
+    // document.querySelector("subdiv3").appendChild(ul);
+
+    // function creatingCountingList(ul) {
+    //   for (i = u.firstChild; i < 11; i += 1) {
+    //     let li = document.createElement("li");
+    //     li.innerHTML = "i";
+        
+    //   }
+    //   document.querySelector("ul").appendChild(li);
+    // }
+    
+    // function countChildNodes(parent) {
+    //     let count = 0;
+    //     for (let child = parent.firstChild; child != null; child = child.nextSibling) {
+    //       count++;
+    //     }
+    //     return count;
+    //   }
+
+
 // Adicione 3 tags h3, todas sendo filhas do div criado no passo 2.
-    </script>
-  </body>
+// function createh3s (){
+//   for 
+// }
+
+
+// Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
+// Adicione a classe title na tag h1 criada;
+// Adicione a classe description nas 3 tags h3 criadas;
+// Remova o div criado no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
+// Centralize o div criado no passo 6 (aquele que possui a classe right-content). Dica: para centralizar, basta configurar o margin-right: auto do div;
+// Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
+// Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
+  </script>
+</body>
+
 </html>
