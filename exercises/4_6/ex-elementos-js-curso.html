@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício 4.5</title>
+</head>
+
+<body>
+
+<div id="paiDoPai">
+  <div id="pai">
+    <div id="primeiroFilho"></div>
+    <div id="elementoOndeVoceEsta">
+      <div id="primeiroFilhoDoFilho"></div>
+      <div id="segundoEUltimoFilhoDoFilho"></div>
+    </div>
+    Atenção!
+    <div id="terceiroFilho"></div>
+    <div id="quartoEUltimoFilho"></div>
+  </div>
+</div>
+
+<script>
+  //BUSCANDO ELEMENTOS
+// Acesse o elemento elementoOndeVoceEsta.
+// Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+let newColor = document.querySelector("#elementoOndeVoceEsta").parentNode ;
+newColor.style.color = "red";
+// Acesse o primeiroFilhoDoFilho e adicione um texto a ele.
+//Você se lembra dos vídeos da aula anterior, como fazer isso?
+document.getElementById("primeiroFilhoDoFilho").innerHTML = "blabla";
+// Acesse o primeiroFilho a partir de pai.
+console.log(document.getElementById("pai").firstElementChild);
+// Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+console.log(document.querySelector("#elementoOndeVoceEsta").previousElementSibling);
+// Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
+console.log(document.querySelector("#elementoOndeVoceEsta").nextSibling);
+// Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
+console.log(document.querySelector("#elementoOndeVoceEsta").nextElementSibling);
+// Agora acesse o terceiroFilho a partir de pai.
+console.log(document.querySelector("#pai").childNodes[5]);
+//aqui eu devia ter declarado todos em variaveis. 
+
+// CRIANDO ELEMENTOS
+// Crie um irmão para elementoOndeVoceEsta. (ou seja um child para o mesmo pai)
+let div = document.createElement("div");
+div.id = "quintoFilho";
+document.getElementById("pai").appendChild(div);
+console.log(div);
+// Crie um filho para elementoOndeVoceEsta.
+let p = document.createElement("p");
+p.id = "terceiroFilhoDoFilho";
+document.getElementById("elementoOndeVoceEsta").appendChild(p);
+console.log(p);
+// Crie um filho para primeiroFilhoDoFilho.
+let p2 = document.createElement("p2");
+p2.id = "primeiroFilhoDoFilhDoFilho";
+document.getElementById("primeiroFilhoDoFilho").appendChild(p2);
+console.log(p2);
+// A partir desse filho criado, acesse terceiroFilho.
+console.log(document.querySelector("#primeiroFilhoDoFilhDoFilho").parentNode.parentNode.nextElementSibling);
+
+
+// REMOVENDO ELEMENTOS
+// Remova todos os elementos da página, menos pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+//aqui para treinar vou remover apenas um que declarei bem numa variavel mesmo: 
+document.getElementById("pai").removeChild(div); //tirei o quinto filho.
+</script>
+
+</body>
+</html>

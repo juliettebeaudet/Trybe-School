@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript - Parte 5</title>
+    <style>
+      .yellow {
+        background-color: yellow;
+      }
+​
+      .green {
+        background-color: green;
+      }
+​
+      .red {
+        background-color: red;
+      }
+​
+      .circle {
+        display: inline-block;
+        border-radius: 100%;
+      }
+​
+      .square {
+        display: inline-block;
+        border-width: 10px;
+      }
+​
+      .small {
+        width: 100px;
+        height: 100px;
+      }
+​
+      .medium {
+        width: 250px;
+        height: 250px;
+      }
+​
+      .big {
+        width: 500px;
+        height: 500px;
+      }
+​
+      .main-title {
+        text-align: center;
+      }
+​
+      .main-description {
+        width: 500px;
+        text-align: center;
+        font-style: italic;
+        margin-left: auto;
+        margin-right: auto;
+      }
+​
+      .main-box {
+        border-style: solid;
+        width: 80%;
+        min-height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+​
+  <body>
+    <h1 class="main-title">JavaScript 4.6</h1>
+    <p class="main-description">
+      Ensinar métodos para manipular HTML através de JavaScript
+    </p>
+    <div id="first" class="main-box"></div>
+    <div id="second" class="main-box"></div>
+    <div id="third" class="main-box"></div>
+    <script>
+      function createCustomElement(classes) {
+        let element = document.createElement('div'); // Criou uma div e colocou dentro da variável
+        element.className = classes.join(' '); // Adicionando uma lista de classes
+        return element; // Retorna o elemento que foi criado;
+      }
+​
+      function addElementAsChild(parent, element) {
+        parent.appendChild(element);
+      }
+​
+      function countChildNodes(parent) {
+        let count = 0;
+        for (let child = parent.firstChild; child != null; child = child.nextSibling) {
+          count++;
+        }
+        return count;
+      }
+​
+      let features = [
+        {
+          color: 'yellow',
+          shape: 'circle',
+          size: 'small',
+        },
+        {
+          color: 'red',
+          shape: 'square',
+          size: 'small',
+        },
+        {
+          color: 'green',
+          shape: 'circle',
+          size: 'small',
+        },
+        {
+          color: 'yellow',
+          shape: 'circle',
+          size: 'small',
+        },
+        {
+          color: 'red',
+          shape: 'square',
+          size: 'small',
+        },
+        {
+          color: 'green',
+          shape: 'circle',
+          size: 'small',
+        },
+        {
+          color: 'red',
+          shape: 'circle',
+          size: 'small',
+        },
+      ];
+​
+      let first = document.querySelector('#first');
+​
+      for (let index in features) {
+        let element = createCustomElement(
+          [features[index].color, features[index].shape, features[index].size]
+        );
+        addElementAsChild(first, element);
+      }
+    </script>
+  </body>
+</html>
+Réduire
+
+
+
