@@ -41,6 +41,7 @@ console.log(document.querySelector("#elementoOndeVoceEsta").nextSibling);
 console.log(document.querySelector("#elementoOndeVoceEsta").nextElementSibling);
 // Agora acesse o terceiroFilho a partir de pai.
 console.log(document.querySelector("#pai").childNodes[5]);
+//aqui eu devia ter declarado todos em variaveis. 
 
 // CRIANDO ELEMENTOS
 // Crie um irmão para elementoOndeVoceEsta. (ou seja um child para o mesmo pai)
@@ -63,9 +64,9 @@ console.log(document.querySelector("#primeiroFilhoDoFilhDoFilho").parentNode.par
 
 
 // REMOVENDO ELEMENTOS
-// Remova todos os elementos da página,
-// menos pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
-
+// Remova todos os elementos da página, menos pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+//aqui para treinar vou remover apenas um que declarei bem numa variavel mesmo: 
+document.getElementById("pai").removeChild(div); //tirei o quinto filho.
 </script>
 
 </body>
