@@ -101,23 +101,16 @@
     // ou seja, um, dois, três, … como valores da lista. 
     // Essa lista deve ser filha do div criado no passo 6;
     let unorderedList = document.createElement("ul");
-    unorderedList.className = "lista";
-    document.querySelector(".right-content").appendChild(unorderedList);
-
-    // let ul = document.createElement("ul");
-    //     array = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
-    //     for (var i = 0; i < array.length; i++) {
-    //         let li = document.createElement("li");
-    //         ul.appendChild(li);
-    //         li.innerHTML = li.innerHTML + array[i];
-    //     }
-    //     divRightContent.appendChild(ul);
-
+        arrayAuxilio = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        for (var i = 0; i < arrayAuxilio.length; i+=1) {
+            let li = document.createElement("li");
+            unorderedList.appendChild(li);
+            li.innerHTML = arrayAuxilio[i];
+        }
+        rightDiv.appendChild(unorderedList);
 
 // Adicione 3 tags h3, todas sendo filhas do div criado no passo 2.
-// function createh3s (){
-//   for 
-// }
+
 
 
 // Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
