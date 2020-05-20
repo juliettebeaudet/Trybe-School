@@ -101,28 +101,44 @@
     // ou seja, um, dois, três, … como valores da lista. 
     // Essa lista deve ser filha do div criado no passo 6;
     let unorderedList = document.createElement("ul");
-        arrayAuxilio = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
-        for (var i = 0; i < arrayAuxilio.length; i+=1) {
-            let li = document.createElement("li");
-            unorderedList.appendChild(li);
-            li.innerHTML = arrayAuxilio[i];
-        }
-        document.querySelector(".right-content").appendChild(unorderedList);
-        //também funciona rightDiv.appendChild(unorderedList);
+    arrayAuxilio = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+    for (var i = 0; i < arrayAuxilio.length; i += 1) {
+      let li = document.createElement("li");
+      unorderedList.appendChild(li);
+      li.innerHTML = arrayAuxilio[i];
+    }
+    document.querySelector(".right-content").appendChild(unorderedList);
+    //também funciona rightDiv.appendChild(unorderedList);
 
-// Adicione 3 tags h3, todas sendo filhas do div criado no passo 2 (ou seja class main-content)
-let h3 = document.createElement("h3");
-
-
-
-
+    // Adicione 3 tags h3, todas sendo filhas do div criado no passo 2 (ou seja class main-content)
+    let h3 = ""; 
+    for (let i = 0; i < 3; i += 1) {
+      h3 = document.createElement("h3");
+      h3.innerHTML = "hey";
+      h3.className = "description";
+      document.querySelector(".main-content").appendChild(h3);
+    }
+    
 // Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
 // Adicione a classe title na tag h1 criada;
-// Adicione a classe description nas 3 tags h3 criadas;
-// Remova o div criado no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
-// Centralize o div criado no passo 6 (aquele que possui a classe right-content). Dica: para centralizar, basta configurar o margin-right: auto do div;
-// Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
+h1.className = "title";
+// Adicione a classe description nas 3 tags h3 criadas; (FEITO no for acima)
+
+// Remova o div criado no passo 5 (aquele que possui a classe left-content).
+//Utilize a função .removeChild();
+document.querySelector(".main-content").removeChild(leftDiv);
+// Centralize o div criado no passo 6 (aquele que possui a classe right-content).
+//Dica: para centralizar, basta configurar o margin-right: auto do div;
+rightDiv.style.marginRight = "auto";
+// Troque a cor de fundo do elemento pai da div criada no passo 3
+//(aquela que possui a classe center-content) para a cor verde;
+centerDiv.style.backgroundColor = "green";
 // Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
+unorderedList.className = "ul";
+for (i=9; i>7; i-=1){
+let lisDelete = document.querySelector(".ul").childNodes[i];
+document.querySelector(".ul").removeChild(lisDelete);
+}
   </script>
 </body>
 
