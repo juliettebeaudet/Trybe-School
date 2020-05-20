@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+​
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Exercise</title>
+  <style>
+    ​ section {
+      border: 10px solid black;
+    }
+
+    ​ div {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+    }
+
+    ​ .brown {
+      background-color: brown;
+    }
+
+    ​ .green {
+      background-color: green;
+    }
+
+    ​ .blue {
+      background-color: blue;
+    }
+
+    ​ .purple {
+      background-color: purple;
+    }
+
+    ​ .yellow {
+      background-color: yellow;
+    }
+
+    ​ .car1 {
+      background-color: #8C9C12;
+    }
+
+    ​ .car2 {
+      background-color: #1DA788;
+    }
+
+    ​ .car1,
+    .car2 {
+      margin-left: 0;
+    }
+  </style>
+</head>
+​
+
+<body>
+  <h1 id="change_heading">Change Me!</h1>
+  SELECTED COLOR <span class="selected">None!</span>
+  <section>
+    <div class="brown"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
+    <div class="yellow"></div>
+  </section>
+  <h2>Race!</h2>
+  <button>Start the race!</button>
+  <br>
+  <div class="car1"></div>
+  <br>
+  <div class="car2"></div>
+
+  <script>
+    window.onload = function () {
+      let heading = document.getElementById("change_heading");
+      heading.innerHTML = "Hello world!";
+
+      let section = document.querySelector("section");
+      section.addEventListener("mouseover", recebeMouseOver);
+
+      function recebeMouseOver(event) {
+        console.log(event);
+        let selectedColor = document.querySelector(".selected");
+        let elementoHTMLQueOriginouOEvento = event.target;
+        selectedColor.innerHTML = elementoHTMLQueOriginouOEvento.className;
+      }
+
+      let button = document.querySelector("button");
+
+      button.addEventListener("click", clicouEmStartNaCorrida);
+      let car1 = document.querySelector(".car1");
+      car1.style.marginLeft = 0;
+
+      let car2 = document.querySelector(".car2");
+      car2.style.marginLeft = 0;
+
+      function reset(car1, car2) {
+        car1.style.marginLeft = 0;
+        car2.style.marginLeft = 0;
+      }
+
+      function clicouEmStartNaCorrida(evento) {
+
+        car1.style.marginLeft = parseInt(car1.style.marginLeft) + (Math.random() * 180) + "px";
+        car2.style.marginLeft = parseInt(car2.style.marginLeft) + (Math.random() * 180) + "px";
+
+        if (parseInt(car1.style.marginLeft) > window.innerWidth) {
+          alert("Carro 1 ganhou");
+          reset(car1, car2);
+        }
+
+        if (parseInt(car2.style.marginLeft) > window.innerWidth) {
+          alert("Carro 2 ganhou");
+          reset(car1, car2);
+        }
+      }
+
+  </script>
+</body>
+
+</html>
