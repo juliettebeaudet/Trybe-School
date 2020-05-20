@@ -72,7 +72,7 @@
 
     function doCircle() {
       let circleRadius = document.getElementById("area-input").value;
-      solutionDiv.innerHTML = circleRadius * circleRadius * 3.14;
+      solutionDiv.innerHTML = circleRadius * circleRadius * Math.PI;
     }
       buttonCircle = document.getElementById("area-button");
       buttonCircle.addEventListener("click", doCircle);
