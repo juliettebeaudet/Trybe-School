@@ -101,18 +101,22 @@
     // ou seja, um, dois, três, … como valores da lista. 
     // Essa lista deve ser filha do div criado no passo 6;
     let unorderedList = document.createElement("ul");
-        arrayAuxilio = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
-        for (var i = 0; i < arrayAuxilio.length; i+=1) {
-            let li = document.createElement("li");
-            unorderedList.appendChild(li);
-            li.innerHTML = arrayAuxilio[i];
-        }
-        document.querySelector(".right-content").appendChild(unorderedList);
-        //também funciona rightDiv.appendChild(unorderedList);
+    arrayAuxilio = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+    for (var i = 0; i < arrayAuxilio.length; i += 1) {
+      let li = document.createElement("li");
+      unorderedList.appendChild(li);
+      li.innerHTML = arrayAuxilio[i];
+    }
+    document.querySelector(".right-content").appendChild(unorderedList);
+    //também funciona rightDiv.appendChild(unorderedList);
 
-// Adicione 3 tags h3, todas sendo filhas do div criado no passo 2 (ou seja class main-content)
-let h3 = document.createElement("h3");
-
+    // Adicione 3 tags h3, todas sendo filhas do div criado no passo 2 (ou seja class main-content)
+    for (let i = 0; i < 3; i += 1) {
+      let h3 = document.createElement("h3");
+      h3.innerHTML = "hey";
+      document.querySelector(".main-content").appendChild(h3);
+    }
+    
 
 
 
