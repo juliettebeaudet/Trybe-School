@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>Calculator</title>
+</head>
+
+<body>
+
+  <label>Square this number:
+    <input type="number" id="square-input" size="2">
+  </label>
+  <button id="square-button">Calculate</button>
+  <br><br>
+
+  <label>Half this number:
+    <input type="number" id="half-input" size="2">
+  </label>
+  <button id="half-button">Calculate</button>
+  <br><br>
+
+  <label>
+    Fraction:
+    <input type="number" id="percent1-input" size="2">
+  </label>
+  <label>
+    Whole:
+    <input type="number" id="percent2-input" size="2">
+  </label>
+  <button id="percent-button">Calculate</button>
+  <br><br>
+
+  <label>Calculate area of circle with radius:
+    <input type="number" id="area-input" size="2">
+  </label>
+  <button id="area-button">Calculate</button>
+  <br><br>
+  <div id="solution"></div>
+
+  <script>
+    // Add a script tag, and add the functions from the calculator exercise
+    //(view the solution if you haven't done it yet).
+    // For each operation, create an event listener for the button, and when it's clicked,
+    //find the value of the appropriate input and show the result of the calculation 
+    //in the solution div.
+    // Bonus: respond to key presses so that the user doesn't have to click the button.
+
+    let solutionDiv = document.getElementById("solution");
+
+    function doSquare() {
+      let square = document.getElementById("square-input").value;
+      solutionDiv.innerHTML = square * square;
+    }
+    let buttonSquare = document.getElementById("square-button");
+    buttonSquare.addEventListener("click", doSquare);
+
+    function doHalf() {
+      let half = document.getElementById("half-input").value;
+      solutionDiv.innerHTML = half / 2;
+    }
+    let buttonHalf = document.getElementById("half-button");
+    buttonHalf.addEventListener("click", doHalf);
+
+    function doPercent() {
+      let fraction = document.getElementById("percent1-input").value;
+      let whole = document.getElementById("percent2-input").value;
+      solutionDiv.innerHTML = fraction / whole * 100 + "%";
+    }
+    let buttonPercent = document.getElementById("percent-button");
+    buttonPercent.addEventListener("click", doPercent);
+
+    function doCircle() {
+      let circleRadius = document.getElementById("area-input").value;
+      solutionDiv.innerHTML = circleRadius * circleRadius * Math.PI;
+    }
+      circleInput = document.getElementById("area-input");
+      circleInput.addEventListener("keyup", doCircle);
+
+// Bonus: respond to key presses so that the user doesn't have to click the button.
+// (here, did it only with the circle calculus, using event 'keyup' instead of 'click' and
+//applying it to the text input area instead of the button).
+
+  </script>
+</body>
+
+</html>
