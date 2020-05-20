@@ -74,8 +74,12 @@
       let circleRadius = document.getElementById("area-input").value;
       solutionDiv.innerHTML = circleRadius * circleRadius * Math.PI;
     }
-      buttonCircle = document.getElementById("area-button");
-      buttonCircle.addEventListener("click", doCircle);
+      circleInput = document.getElementById("area-input");
+      circleInput.addEventListener("keyup", doCircle);
+
+// Bonus: respond to key presses so that the user doesn't have to click the button.
+// (here, did it only with the circle calculus, using event 'keyup' instead of 'click' and
+//applying it to the text input area instead of the button).
 
   </script>
 </body>
