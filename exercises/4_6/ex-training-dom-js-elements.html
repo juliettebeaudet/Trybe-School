@@ -134,7 +134,11 @@ rightDiv.style.marginRight = "auto";
 //(aquela que possui a classe center-content) para a cor verde;
 centerDiv.style.backgroundColor = "green";
 // Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
-
+unorderedList.className = "ul";
+for (i=9; i>7; i-=1){
+let lisDelete = document.querySelector(".ul").childNodes[i];
+document.querySelector(".ul").removeChild(lisDelete);
+}
   </script>
 </body>
 
