@@ -55,14 +55,12 @@
     let buttonSquare = document.getElementById("square-button");
     buttonSquare.addEventListener("click", doSquare);
 
-
     function doHalf() {
       let half = document.getElementById("half-input").value;
       solutionDiv.innerHTML = half / 2;
     }
     let buttonHalf = document.getElementById("half-button");
     buttonHalf.addEventListener("click", doHalf);
-
 
     function doPercent() {
       let fraction = document.getElementById("percent1-input").value;
@@ -72,16 +70,12 @@
     let buttonPercent = document.getElementById("percent-button");
     buttonPercent.addEventListener("click", doPercent);
 
-
-
-// let circle = document.getElementById("area-input").value;
-
-
-// let buttonWhole = document.getElementById("percent2-button");
-
-
-// let buttonCircle = document.getElementById("area-button");
-
+    function doCircle() {
+      let circleRadius = document.getElementById("area-input").value;
+      solutionDiv.innerHTML = circleRadius * circleRadius * 3.14;
+    }
+      buttonCircle = document.getElementById("area-button");
+      buttonCircle.addEventListener("click", doCircle);
 
   </script>
 </body>
