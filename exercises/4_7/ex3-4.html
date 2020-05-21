@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+  <title>JavaScript event handlers exercise</title>
+  <!-- load css from jsweb -->
+  <link rel="stylesheet" type="text/css" href="http://nptcstudents.co.uk/andrewg/jsweb/css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="http://nptcstudents.co.uk/andrewg/jsweb/css/jsweb.css" />
+
+
+
+  <!-- JavaScript could go up here -->
+  <!-- JavaScript could go up here -->
+  <!-- JavaScript could go up here -->
+
+
+
+</head>
+
+<body>
+  <div id="excontainer">
+    <div id="pagecontent">
+      <h1>Event handlers exercise</h1>
+
+      <p>Download this page and open with Dreamweaver. Or right click and select &quot;View Source&quot;, then cut and
+        paste the code to Dreamweaver.</p>
+
+      <h2>Task 1</h2>
+
+      <p>Add a HTML button to this page in the area highlighted below. Using the <b>onClick()</b> event handler have the
+        button, when clicked, open an <b>alert()</b> box which says &quot;You clicked the button&quot;.
+
+        <div class="exampleblock">
+          <button type="button" class="btn" onclick="clickButton()">Click here</button>
+        </div>
+
+        <h2>Task 2</h2>
+
+        <p>Add two lines of script to the &lt;script&gt; tag in the source of this page marked for this task (<b>lines
+            40 - 60</b>). The first line should declare a new variable called <b>gamePrice</b> and should assign it the
+          value <b>39.99</b>. The second should declare a new variable called <b>discount</b> and assign it the value
+          0.20.</p>
+
+        <p>Add a HTML button below the &lt;script&gt; tag. Give this button an <b>onClick</b> event handler. When the
+          button is clicked it should multiply <b>gamePrice</b> by <b>discount</b> and present an alert box containing
+          the phrase &quot;&pound;(result) off!&quot;. You will need <a
+            href="http://nptcstudents.co.uk/andrewg/jsweb/maths.html" target="_blank">concatenation</a> to achieve this.
+        </p>
+
+        <script language="javascript" type="text/javascript">
+          // JavaScript for task 1 here
+          function clickButton() {
+            alert("You clicked the button");
+          }
+          // ourButton.addEventListener("click", clickButton);
+        // JavaScript for task 2 here
+        // JavaScript for task 3 extension here
+        </script>
+
+        <p>You may want to consider using JavaScript's built in <a href="http://www.w3schools.com/js/js_obj_math.asp"
+            target="_blank">Maths object</a> to round the number you get in your result to a more reasonable one.</p>
+
+
+        <h2>Extensions</h2>
+        <ol>
+          <li>
+            <p>For this task you will need two images of the same size. Add one image into this page using a html
+              <b>&lt;img /&gt;</b> tag. Using the <b>onMouseOver()</b> and <b>onMouseOut()</b> event handlers try and
+              make the image change to the second image when the mouse pointer hovers over it, and then swap back to the
+              first image when the mouse pointer is moved off of the image.</p>
+            <p><a href="http://www.htmlite.com/JS019.php" target="_blank">This tutorial</a> may be of help!</p>
+          </li>
+        </ol>
+
+
+
+    </div>
+  </div>
+</body>
+
+</html>
