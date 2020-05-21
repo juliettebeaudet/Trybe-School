@@ -9,7 +9,7 @@
 <body>
 
   <img style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif">
-
+<!-- the code with .marginLeft instead of .left also works on position:relative -->
 
   <script>
     //   Add a script tag at the bottom of the page, where you'll put all your code. OK
@@ -18,7 +18,6 @@
     //so that it starts at the left hand of the screens. OK
     let imageCat = document.getElementsByTagName("img")[0];
     imageCat.style.marginLeft = "0px";
-
 
     // Create a function called catWalk() that moves the cat 10 pixels to the right
     //of where it started, by changing the "left" style property. OK
@@ -55,16 +54,18 @@
     function catWalk() {
       let currentPlace = parseInt(imageCat.style.marginLeft);
 
-      if (movingRight && (currentPlace > (window.innerWidth - imageCat.width))) {
+      if (movingRight == true && (currentPlace > (window.innerWidth - imageCat.width))) {
         movingRight = false;
       }
-      if (!movingRight && (currentPlace <= 0)) {
+      if (movingRight != true && (currentPlace <= 0)) {//it was possible here to write only !movingRight &&)
         movingRight = true;
       }
-      if (movingRight) {
+      if (movingRight == true) { //it was possible here to write only (movingRight))
         imageCat.style.marginLeft = (currentPlace + 10) + "px";
+        imageCat.style.transform = "scaleX(1)";
       } else {
         imageCat.style.marginLeft = (currentPlace - 10) + "px";
+        imageCat.style.transform = "scaleX(-1)";
       }
     }
     window.setInterval(catWalk, 50);
