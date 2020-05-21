@@ -61,11 +61,14 @@
         // JavaScript for task 3 here
         let imagem = document.querySelector("pic");
         function Over() {
-          imagem.src = "/half.png";
+          imagem.src = "half.png";
         }
         function Out() {
-          imagem.src = "";
+          imagem.src = "half2.png";
         }
+        imagem.addEventListener("mouseover", Over);
+        imagem.addEventListener("mouseout", Out);
+
 
         </script>
 
@@ -85,7 +88,7 @@
           </li>
         </ol>
 
-        <img class="pic" src="/half.png" alt="half pics" onmouseover="Over()" onmouseout="Out()">
+        <img class="pic" src="/half.png" alt="half pics">
         
 
 
