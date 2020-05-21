@@ -52,11 +52,16 @@
           function clickButton() {
             alert("You clicked the button");
           }
-          // ourButton.addEventListener("click", clickButton);
         // JavaScript for task 2 here
+        let gamePrice = 39.99;
+        let discount = 0.20;
+        function makeDiscount() {
+          alert("£" + Math.round(gamePrice*discount) + " off!");
+        }
         // JavaScript for task 3 extension here
         </script>
 
+<button type="button" class="btnDiscount" onclick="makeDiscount()">Click here to see your discount</button>
         <p>You may want to consider using JavaScript's built in <a href="http://www.w3schools.com/js/js_obj_math.asp"
             target="_blank">Maths object</a> to round the number you get in your result to a more reasonable one.</p>
 
