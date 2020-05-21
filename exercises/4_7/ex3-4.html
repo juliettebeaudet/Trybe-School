@@ -59,17 +59,13 @@
           alert("£" + Math.round(gamePrice*discount) + " off!");
         }
         // JavaScript for task 3 here
-        let imagem = document.querySelector("pic");
+        let img = document.querySelector(".pic");
         function Over() {
-          imagem.src = "half.png";
-        }
+            img.src = "half2.png";
+          }
         function Out() {
-          imagem.src = "half2.png";
+          img.src = "half.png";
         }
-        imagem.addEventListener("mouseover", Over);
-        imagem.addEventListener("mouseout", Out);
-
-
         </script>
 
 <button type="button" class="btnDiscount" onclick="makeDiscount()">Click here to see your discount</button>
@@ -88,8 +84,8 @@
           </li>
         </ol>
 
-        <img class="pic" src="/half.png" alt="half pics">
-        
+        <img class="pic" src="/half.png" alt="half pics" onmouseover="Over()" onmouseout="Out()">
+    
 
 
     </div>
