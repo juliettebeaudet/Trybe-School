@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Creepster|Text+Me+One" rel="stylesheet">
+  <title>A Creepy Story</title>
+  <style>
+    body {
+      margin: 20px;
+      font-family: 'Text Me One', sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    body.dark {
+      color: white;
+      background: black;
+    }
+
+    h1 {
+      font-family: 'Creepster', cursive;
+      font-weight: normal;
+      font-size: 60px;
+      margin: 5px;
+    }
+
+    button {
+      display: block;
+      padding: 8px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    .textEntry {
+      margin-top: 12px;
+      margin-bottom: 15px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>The Basement</h1>
+  <p id="story">I knew I shouldn't go there, in that dank, cold little place. But I wanted to find my friend, and he was
+    hiding in the basement.</p>
+
+  <button>Get In The Mood</button>
+  <div class="textEntry">Type your name here, if you dare: <input type="text" id="name" autocomplete="off"></div>
+  <button>Please, Please Don't Click Me</button>
+  <button>Tell Me What Happened!</button>
+  <audio id="audio" src="http://reboot-me.com/ouch.mp3" type="audio/mpeg"></audio>
+
+
+
+  <script>
+    var personName = "";
+    function complainMessage() {
+      alert("I told you not to do that " + personName);
+    }
+
+    function typeAndScream() {
+      document.getElementById("audio").play();
+      personName = document.getElementById("name").value;
+    }
+
+    function goDark() {
+      var body = document.getElementsByTagName("body")[0];
+      if (body.className == "") {
+        body.className = "dark";
+      }
+      else {
+        body.className = "";
+      }
+
+    }
+
+    function finishTheStory() {
+      document.getElementById("story").innerHTML = "So I carefully searched the damp dungeon. There you are! I grinned a smile with all 98 of my gleaming teeth. Dinner time!";
+    }
+
+    let buttonMood = document.getElementsByTagName("button")[0];
+    buttonMood.addEventListener("click", typeAndScream);
+
+    let buttonDont = document.getElementsByTagName("button")[1];
+    buttonDont.addEventListener("click", complainMessage);
+
+    let buttonStory = document.getElementsByTagName("button")[2];
+    buttonStory.addEventListener("click", finishTheStory);
+  </script>
+</body>
+
+</html>
