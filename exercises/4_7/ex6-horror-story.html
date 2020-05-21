@@ -80,13 +80,17 @@
     }
 
     let buttonMood = document.getElementsByTagName("button")[0];
-    buttonMood.addEventListener("click", typeAndScream);
+    buttonMood.addEventListener("click", goDark);
+
+    let userInput = document.querySelector(".textEntry");
+    userInput.addEventListener("input", typeAndScream);
 
     let buttonDont = document.getElementsByTagName("button")[1];
     buttonDont.addEventListener("click", complainMessage);
 
     let buttonStory = document.getElementsByTagName("button")[2];
     buttonStory.addEventListener("click", finishTheStory);
+
   </script>
 </body>
 
