@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Cat Walk</title>
+</head>
+
+<body>
+
+  <img style="position:absolute;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif">
+<!-- the code with .marginLeft instead of .left also works on position:relative -->
+
+  <script>
+    //   Add a script tag at the bottom of the page, where you'll put all your code. OK
+    // Create a variable to store a reference to the img. OK
+    // Change the style of the img to have a "left" of "0px",
+    //so that it starts at the left hand of the screens. OK
+    let imageCat = document.getElementsByTagName("img")[0];
+    imageCat.style.marginLeft = "0px";
+
+    // Create a function called catWalk() that moves the cat 10 pixels to the right
+    //of where it started, by changing the "left" style property. OK
+    // Call that function every 50 milliseconds. OK
+    //Your cat should now be moving across the screen from left to right. Hurrah!
+
+    /*ANSWER HERE IS
+    function catWalk() {
+      let currentPlace = parseInt(imageCat.style.marginLeft);
+      imageCat.style.marginLeft = (parseInt(imageCat.style.marginLeft) + 10) + "px";
+    }
+    window.setInterval(catWalk, 50);
+    */
+
+    /*Bonus #1: When the cat reaches the right-hand of the screen,
+    restart them at the left hand side ("0px").
+    So they should keep walking from left to right across the screen, forever and ever.*/
+
+    /*ANSWER HERE IS
+        function catWalk() {
+          let currentPlace = parseInt(imageCat.style.marginLeft);
+          imageCat.style.marginLeft = (parseInt(imageCat.style.marginLeft) + 10) + "px";
+          if (currentPlace >= window.innerWidth - imageCat.width) {
+            imageCat.style.marginLeft = "0px";
+          }
+        }
+        window.setInterval(catWalk, 50); 
+        */
+
+    /*Bonus #2: When the cat reaches the right-hand of the screen,
+    make them move backwards instead.
+    They should keep walking back and forth forever and ever.*/
+    let movingRight = true;
+    function catWalk() {
+      let currentPlace = parseInt(imageCat.style.marginLeft);
+
+      if (movingRight == true && (currentPlace > (window.innerWidth - imageCat.width))) {
+        movingRight = false;
+      }
+      if (movingRight != true && (currentPlace <= 0)) {//it was possible here to write only !movingRight &&)
+        movingRight = true;
+      }
+      if (movingRight == true) { //it was possible here to write only (movingRight))
+        imageCat.style.marginLeft = (currentPlace + 10) + "px";
+        imageCat.style.transform = "scaleX(1)";
+      } else {
+        imageCat.style.marginLeft = (currentPlace - 10) + "px";
+        imageCat.style.transform = "scaleX(-1)";
+      }
+    }
+    window.setInterval(catWalk, 50);
+
+    /*Bonus #3: When the cat reaches the middle of the screen,
+    replace the img with an image of a cat dancing,
+    keep it dancing for 10 seconds, and then replace the img with the original image
+    and have it continue the walk.*/
+    //NOT DONE
+  </script>
+</body>
+
+</html>
