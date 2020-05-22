@@ -24,11 +24,11 @@
 
 <h3>Preferências do leitor</h3>
 
-<p>Prezado, por favor preenche o seguinte formulário para que nosso site se adapte às suas preferências de leitura:</p>
+<p>Por favor preenche o seguinte formulário para que nosso site se adapte às suas preferências de leitura:</p>
 <form action="/action_page.php">
   <label for="male">Cor de fundo da tela:</label><br>
-  <input type="radio" name="color" id="telaBranca" value="branco">Branco<br>
-  <input type="radio" name="color" id="telaPreta" value="preto">Preto<br>
+  <input type="radio" name="color" id="telaVerde" value="branco">Verde<br>
+  <input type="radio" name="color" id="telaAzul" value="preto">Azul<br>
   <label for="male">Cor do texto:</label><br>
   <input type="radio" name="color" id="textoPreto" value="preto">Preto<br>
   <input type="radio" name="color" id="textoBranco" value="female">Branco<br>
@@ -42,10 +42,8 @@
   <label for="male">Espaçamento entre as linhas do texto:</label><br>
   <input type="radio" name="size" id="espaçoPequeno" value="pequeno">Pequeno<br>
   <input type="radio" name="size" id="espaçoMedio" value="medio">Médio<br>
-  <input type="radio" name="size" id="espaçoGrande" value="grande">Grande<br>
+  <input type="radio" name="size" id="espaçoGrande" value="grande">Grande<br><br>
   <input type="submit" value="Gravar minhas preferências">
-
-
 </form>
   
   <script>
@@ -55,18 +53,27 @@
     Tamanho da fonte;  Espaçamento entre as linhas do texto; Tipo da fonte (Font family).
     Essas preferências devem ser salvas de forma que, ao retornar à página,
     as preferências que foram previamente configuradas possam ser aplicadas na tela.*/
-    //(ou seja, no localStorage e nao localSession).
-
     /*Baby steps:
 1- Trabalhar no html, por examplo com form com perguntas para cada item pedido.
 Lembrar em adicionar id para cada input.
 2- No <script>, armanezar esses inputs, criar functions e addEventListener para cada.
-Integrando na function o input via o localStorage.setItem .
-
+Ou seja fazer funcionar as preferências, ainda sem armazenar.
+3. Armazene com localStorage para que isso tudo fique gravado: declarando var gerais e
+modificando as functions e criando mais uma para gravar tudo
+(criar chaves e valores do localStorage).
     */
 
+let inputFundoVerde = document.getElementById("telaVerde");
+inputFundoVerde.addEventListener("click", changeBackground);
 
-    //mudar background fundo escuro
+// function changeBackground() { // tentar fazer uma para todas cores em vez de repetir
+//   document.body.style.backgroundColor = 
+
+// }
+// https://github.com/cduessel/trybe/blob/4.8/4.JavaScript/4-8-ex.html para ver examplo
+
+//SUGESTAO MARY
+//mudar background fundo escuro
 // const botaoTelaBlack = document.getElementById('btnCorFundoEscuro');
 // botaoTelaBlack.addEventListener('click', trocaCorFundoEscuro);
 
