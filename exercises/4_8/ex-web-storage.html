@@ -39,9 +39,9 @@
     <input type="radio" name="color" id="textoPreto" value="black">Preto<br>
     <input type="radio" name="color" id="textoBranco" value="white">Branco<br>
     <label for="male">Tamanho da fonte:</label><br>
-    <input type="radio" name="size" id="fontePequena" value="pequeno">Pequeno<br>
-    <input type="radio" name="size" id="fonteMedia" value="medio">Médio<br>
-    <input type="radio" name="size" id="fonteGrande" value="grande">Grande<br>
+    <input type="radio" name="size" id="fontePequena" value="15px">Pequeno<br>
+    <input type="radio" name="size" id="fonteMedia" value="22px">Médio<br>
+    <input type="radio" name="size" id="fonteGrande" value="30px">Grande<br>
     <label for="male">Tipo da fonte:</label><br>
     <input type="radio" name="type" id="fonteFamily" value="male">Font family<br>
     <input type="radio" name="type" id="fonteCalibri" value="female">Calibri<br>
@@ -79,43 +79,41 @@ function changeBackground(event) {
 inputFundoVerde.addEventListener("click", changeBackground);
 inputFundoAzul.addEventListener("click", changeBackground);
 
-localStorage.getItem("background-color");
+document.body.style.backgroundColor = localStorage.getItem("background-color");
 
 //Text color
-let inputTextoBranco = document.getElementById(textoBranco);
-let inputTextoPreto = document.getElementById(textoPreto);
+let inputTextoBranco = document.getElementById("textoBranco");
+let inputTextoPreto = document.getElementById("textoPreto");
 
-function changeTextColor(evento) {
-document.body.style.color = evento.target.value;
+function changeTextColor(event) {
+document.body.style.color = event.target.value;
+localStorage.setItem("font-color", event.target.value);
 }
 inputTextoBranco.addEventListener("click", changeTextColor);
 inputTextoPreto.addEventListener("click", changeTextColor);
 
+document.body.style.color = localStorage.getItem("font-color");
+
 //Font size
+let inputPequenoTexto = document.getElementById("fontePequena");
+let inputMedioTexto = document.getElementById("fonteMedia");
+let inputGrandeTexto = document.getElementById("fonteGrande");
+
+function changeFontSize(event) {
+document.body.style.fontSize = event.target.value;
+localStorage.setItem("font-size", event.target.value);
+}
+inputPequenoTexto.addEventListener("click", changeFontSize);
+inputMedioTexto.addEventListener("click", changeFontSize);
+inputGrandeTexto.addEventListener("click", changeFontSize);
+
+document.body.style.fontSize = localStorage.getItem("font-size");
+
 
 //Font type
-
+//
 //Line space
-
-
-
-
-
-// }
-// https://github.com/cduessel/trybe/blob/4.8/4.JavaScript/4-8-ex.html para ver examplo
-
-//SUGESTAO MARY
-//mudar background fundo escuro
-// const botaoTelaBlack = document.getElementById('btnCorFundoEscuro');
-// botaoTelaBlack.addEventListener('click', trocaCorFundoEscuro);
-
-// //Esta linha mantem o estilo escuro salvo no browser quando carrega a página
-// document.body.style.backgroundColor = localStorage.getItem('corAtual');
-
-// function trocaCorFundoEscuro() {
-// localStorage.corAtual = 'black';
-// document.body.style.backgroundColor = localStorage.getItem('corAtual');
-// }
+//
 
   </script>
 </body>
