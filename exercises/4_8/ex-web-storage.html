@@ -40,16 +40,15 @@
     <input type="radio" name="color" id="textoBranco" value="white">Branco<br>
     <label for="male">Tamanho da fonte:</label><br>
     <input type="radio" name="size" id="fontePequena" value="15px">Pequeno<br>
-    <input type="radio" name="size" id="fonteMedia" value="22px">Médio<br>
-    <input type="radio" name="size" id="fonteGrande" value="30px">Grande<br>
+    <input type="radio" name="size" id="fonteMedia" value="20px">Médio<br>
+    <input type="radio" name="size" id="fonteGrande" value="25px">Grande<br>
     <label for="male">Tipo da fonte:</label><br>
-    <input type="radio" name="type" id="fonteFamily" value="male">Font family<br>
-    <input type="radio" name="type" id="fonteCalibri" value="female">Calibri<br>
+    <input type="radio" name="type" id="fonteTimes" value="Times New Roman">Times New Roman<br>
+    <input type="radio" name="type" id="fonteArial" value="Arial">Arial<br>
     <label for="male">Espaçamento entre as linhas do texto:</label><br>
-    <input type="radio" name="size" id="espaçoPequeno" value="pequeno">Pequeno<br>
-    <input type="radio" name="size" id="espaçoMedio" value="medio">Médio<br>
-    <input type="radio" name="size" id="espaçoGrande" value="grande">Grande<br><br>
-    <input type="submit" value="Gravar minhas preferências">
+    <input type="radio" name="size" id="espaçoPequeno" value="17px">Pequeno<br>
+    <input type="radio" name="size" id="espaçoMedio" value="22px">Médio<br>
+    <input type="radio" name="size" id="espaçoGrande" value="27px">Grande<br><br>
   </form>
 
   <script>
@@ -109,11 +108,33 @@ inputGrandeTexto.addEventListener("click", changeFontSize);
 
 document.body.style.fontSize = localStorage.getItem("font-size");
 
-
 //Font type
-//
+let inputTimes = document.getElementById("fonteTimes");
+let inputArial = document.getElementById("fonteArial");
+
+function changeFontFamily(event) {
+document.body.style.fontFamily = event.target.value;
+localStorage.setItem("font-family", event.target.value);
+}
+inputTimes.addEventListener("click", changeFontFamily);
+inputArial.addEventListener("click", changeFontFamily);
+
+document.body.style.fontFamily = localStorage.getItem("font-family");
+
 //Line space
-//
+let inputPequenaLinha = document.getElementById("espaçoPequeno");
+let inputMediaLinha = document.getElementById("espaçoMedio");
+let inputGrandeLinha = document.getElementById("espaçoGrande");
+
+function changeLineHeight(event) {
+document.body.style.lineHeight = event.target.value;
+localStorage.setItem("line-height", event.target.value);
+}
+inputPequenaLinha.addEventListener("click", changeLineHeight);
+inputMediaLinha.addEventListener("click", changeLineHeight);
+inputGrandeLinha.addEventListener("click", changeLineHeight);
+
+document.body.style.lineHeight = localStorage.getItem("line-height");
 
   </script>
 </body>
