@@ -1,5 +1,5 @@
-let inputEstado = document.getElementById('estado');
-let todosEstados = [
+const inputEstado = document.getElementById('estado');
+const todosEstados = [
   ['Acre', 'AC'],
   ['Alagoas', 'AL'],
   ['Amapá', 'AP'],
@@ -29,11 +29,12 @@ let todosEstados = [
   ['Tocantins', 'TO']
 ];
 
-function listaEstados () {
-  for (i=0; i < todosEstados.length; i+=0){
-    let lista = inputEstado.appendChild(document.createElement('lista'));
-    lista.innerText = todosEstados[i];
+function criarEstados() {
+  for (let i=0; i < todosEstados.length; i+=1){
+    const novoEstado = document.createElement('option');
+    estado.innerText = todosEstados[i][0];
+    estado.value = todosEstados[i][1];
+    inputEstado.appendChild(novoEstado);
   }    
 }
-//not working yet
 
