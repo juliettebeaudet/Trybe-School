@@ -1,4 +1,5 @@
-let stateList = [
+let inputEstado = document.getElementById('estado');
+let todosEstados = [
   ['Acre', 'AC'],
   ['Alagoas', 'AL'],
   ['Amapá', 'AP'],
@@ -27,3 +28,12 @@ let stateList = [
   ['Sergipe', 'SE'],
   ['Tocantins', 'TO']
 ];
+
+function listaEstados () {
+  for (i=0; i < todosEstados.length; i+=0){
+    let lista = inputEstado.appendChild(document.createElement('lista'));
+    lista.innerText = todosEstados[i];
+  }    
+}
+//not working yet
+
