@@ -32,8 +32,8 @@ const todosEstados = [
 function criarEstados() {
   for (let i=0; i < todosEstados.length; i+=1){
     const novoEstado = document.createElement('option');
-    estado.innerText = todosEstados[i][0];
-    estado.value = todosEstados[i][1];
+    novoEstado.innerText = todosEstados[i][0];
+    novoEstado.value = todosEstados[i][1];
     inputEstado.appendChild(novoEstado);
   }    
 }
