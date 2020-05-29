@@ -37,4 +37,7 @@ function criarEstados() {
     inputEstado.appendChild(novoEstado);
   }    
 }
+window.onload = function () {
+  criarEstados();
+}
 
