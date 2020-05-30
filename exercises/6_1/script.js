@@ -32,12 +32,12 @@ const todosEstados = [
 ];
 
 function criarEstados() {
-  for (let i=0; i < todosEstados.length; i+=1){
+  for (let i = 0; i < todosEstados.length; i += 1) {
     const novoEstado = document.createElement('option');
     novoEstado.innerText = todosEstados[i][0];
     novoEstado.value = todosEstados[i][1];
     inputEstado.appendChild(novoEstado);
-  }    
+  }
 }
 window.onload = function () {
   criarEstados();
@@ -50,8 +50,8 @@ let padrao = /^(0[1-9]|[12][0-9]|3[01])[- /.]/; //regex for dd/mm/aaaa pattern f
 
 let dataInput = document.getElementById('data');
 
-function formatoData(){
-  if (dataInput.value.match(padrao) === null){
+function formatoData() {
+  if (dataInput.value.match(padrao) === null) {
     alert("Digite data no seguinte formato: DD/MM/AAAA");
   }
 }
@@ -61,9 +61,15 @@ dataInput.addEventListener("change", formatoData);
 
 //to clear form
 let clearButton = document.getElementById('limpar');
-let allForm = document.getByElementsByTagName('form')[0];
+let allInputs = document.getElementsByTagName('input'); //will return array
+let allTextArea = document.getElementsByTagName('textarea')[0];//will return the first and unique
+let allSelect = document.getElementsByTagName('select')[0];//will return the first and unique
 
-function clearAll(){
-allForm.innerText = "";
+function clearAll() {
+  for (i = 0; i < allInputs.length; i += 1) {
+    allInputs[i].value = "";
+  }
+  allTextArea.value = "";
+  allSelect.value = "";
 }
 clearButton.addEventListener("click", clearAll);
