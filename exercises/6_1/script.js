@@ -1,3 +1,5 @@
+// to give state options
+
 const inputEstado = document.getElementById('estado');
 const todosEstados = [
   ['Acre', 'AC'],
@@ -42,6 +44,8 @@ window.onload = function () {
 }
 
 
+//to change date pattern
+
 let padrao = /^(0[1-9]|[12][0-9]|3[01])[- /.]/; //regex for dd/mm/aaaa pattern found online
 
 let dataInput = document.getElementById('data');
@@ -53,3 +57,13 @@ function formatoData(){
 }
 dataInput.addEventListener("change", formatoData);
 
+//to consolidate form
+
+//to clear form
+let clearButton = document.getElementById('limpar');
+let allForm = document.getByElementsByTagName('form')[0];
+
+function clearAll(){
+allForm.innerText = "";
+}
+clearButton.addEventListener("click", clearAll);
