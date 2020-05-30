@@ -42,4 +42,14 @@ window.onload = function () {
 }
 
 
+let padrao = /^(0[1-9]|[12][0-9]|3[01])[- /.]/; //regex for dd/mm/aaaa pattern found online
+
+let dataInput = document.getElementById('data');
+
+function formatoData(){
+  if (dataInput.value.match(padrao) === null){
+    alert("Digite data no seguinte formato: DD/MM/AAAA");
+  }
+}
+dataInput.addEventListener("change", formatoData);
 
