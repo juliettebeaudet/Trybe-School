@@ -45,19 +45,14 @@
   <fieldset>
     <legend>Dados do seu último emprego</legend>
     <label for="resumo">Resumo do currículo:</label>
-    <textarea type="text" id="resumo" name="resumo" maxlength="1000" required="required"></textarea><br><br>
+    <textarea type="text" id="resumo" name="resumo" maxlength="1000"  cols="60"
+    rows="5" required="required"></textarea><br><br>
     <label for="cargo">Cargo:</label>
     <input type="text" id="cargo" name="cargo" maxlength="500" required="required"><br><br>
     <label for="descricao">Descrição do cargo:</label>
     <input type="text" id="descricao" name="descricao" maxlength="40" required="required"><br><br>
-    <label for="date">Data de inicio:</label>
-    <input type="date" id="data" name="data" required="required"><br><br>
-    <!-- Verificar o formato da data dd/mm/aaaa.
-    O dia deve ser > 0 e <= 31.
-    O mês deve ser > 0 e <= 12.
-    O ano não pode ser negativo.
-    Caso alguma das condições for inválida no momento do envio do formulário, 
-    exibir mensagem de erro contextualizada. -->
+    <label for="data">Data de inicio:</label>
+    <input type="text" id="data" name="data"  placeholder="dd/mm/aaaa" required="required"><br><br>
   </fieldset>
   <br><br>
   <section id="buttons">
