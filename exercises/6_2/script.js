@@ -44,25 +44,13 @@ window.onload = function () {
 }
 
 
-//to change date pattern
+//function to change date pattern: removed, using js library to pick date now
 
-let padrao = /^(0[1-9]|[12][0-9]|3[01])[- /.]/; //regex for dd/mm/aaaa pattern found online
 
-let dataInput = document.getElementById('data');
 
-function formatoData() {
-  if (dataInput.value.match(padrao) === null) {
-    alert("Digite data no seguinte formato: DD/MM/AAAA");
-  }
-}
-dataInput.addEventListener("change", formatoData);
+
 
 //to verify, consolidate and export all form into extra div
-let consolidateButton = document.getElementById('consolidar');
-let divResult = document.getElementById('div-form');
-//function to verify
-//function to send all input, textarea and select value into divResult
-//consolidateButton.addEventListener("click", function);
 
 //to clear form
 let clearButton = document.getElementById('limpar');
