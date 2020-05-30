@@ -57,7 +57,12 @@ function formatoData() {
 }
 dataInput.addEventListener("change", formatoData);
 
-//to consolidate form
+//to verify, consolidate and export all form into extra div
+let consolidateButton = document.getElementById('consolidar');
+let divResult = document.getElementById('div-form');
+//function to verify
+//function to send all input, textarea and select value into divResult
+//consolidateButton.addEventListener("click", function);
 
 //to clear form
 let clearButton = document.getElementById('limpar');
@@ -71,5 +76,6 @@ function clearAll() {
   }
   allTextArea.value = "";
   allSelect.value = "";
+  divResult.value = "";
 }
 clearButton.addEventListener("click", clearAll);
