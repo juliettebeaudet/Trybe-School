@@ -22,7 +22,7 @@ figure {
 	padding-bottom: 50px;
 }
 
-@media (min-width:900px){
+@media (min-width:900px) and (max-width:1500px){
 
   body {
     background-color: orange;
