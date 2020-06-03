@@ -22,7 +22,7 @@ figure {
 	padding-bottom: 50px;
 }
 
-@media (min-width:885px){
+@media (min-width:900px){
 
   body {
     background-color: orange;
@@ -37,8 +37,15 @@ figure {
     font-size: 35px;
     }
 
+    figure {
+      width: 40%;
+    }
+
     .figures {
       display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
 
 }
