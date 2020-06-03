@@ -37,3 +37,15 @@ footer {
 h1, h2, h3 {
   text-align: center;
 }
+
+
+@media (min-width: 580px) {
+
+  aside {
+    width: 50%;
+  }
+  .asides {
+    display: flex;
+    justify-content: stretch;
+  }
+}
