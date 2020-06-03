@@ -53,4 +53,9 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-around;
   }
+
+  article {
+    padding: 80px;
+  }
+
 }
