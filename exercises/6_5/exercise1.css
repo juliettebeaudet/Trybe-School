@@ -1,9 +1,15 @@
 body {
-
+margin: 20px;
 }
+
+p {
+  font-size:18px;
+}
+
 h1 {
-
+font-size: 25px;
 }
+
 h2 {
 
 }
@@ -13,5 +19,5 @@ img {
 }
 
 figure {
-	margin: 0;
+	padding-bottom: 50px;
 }
