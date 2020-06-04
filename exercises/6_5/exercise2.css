@@ -1,0 +1,61 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 20px;
+}
+
+header {
+  background-color: peru;
+  padding: 10px;
+}
+
+.aside-one {
+  background-color: orange;
+  padding: 10px;
+}
+
+.aside-two {
+  background-color: orangered;
+  padding: 10px;
+}
+
+article {
+  background-color:rgb(223, 181, 90);
+  padding: 20px;
+}
+
+footer {
+  background-color: peru;
+  padding: 10px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+
+@media (min-width: 580px) {
+
+  aside {
+    width: 50%;
+  }
+  .asides {
+    display: flex;
+    justify-content: stretch;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  article {
+    padding: 80px;
+  }
+
+}

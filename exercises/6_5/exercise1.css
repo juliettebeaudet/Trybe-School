@@ -1,0 +1,51 @@
+body {
+margin: 20px;
+}
+
+p {
+  font-size:18px;
+}
+
+h1 {
+font-size: 25px;
+}
+
+h2 {
+
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	padding-bottom: 50px;
+}
+
+@media (min-width:900px) and (max-width:1500px){
+
+  body {
+    background-color: orange;
+    margin: 50px;
+    }
+
+    p {
+      font-size:15px;
+    }
+    
+    h1 {
+    font-size: 35px;
+    }
+
+    figure {
+      width: 40%;
+    }
+
+    .figures {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+}
