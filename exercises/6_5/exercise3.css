@@ -104,3 +104,32 @@
     float: none;
   } 
 }
+
+@media (max-width: 768px) {
+  #aside {
+  display: none;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  #header {
+    position: fixed;
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#navigation {
+  float: none;
+  margin-top: 100px;
+}
+
+.inicial {
+  display: flex;
+  flex-direction: column;
+}
+}
