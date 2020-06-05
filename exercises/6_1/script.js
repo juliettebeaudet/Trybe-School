@@ -40,4 +40,3 @@ function criarEstados() {
 window.onload = function () {
   criarEstados();
 }
-
