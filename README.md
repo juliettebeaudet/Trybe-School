@@ -16,7 +16,7 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [x] 3-2: *HTML & CSS - Getting Started with CSS*
 - [x] 3-3: *HTML & CSS - Selectors and positioning*
 - [x] 3-4: *Semantic HTML*
-- [x] 3-5: *[Project - HTML & CSS](juliettebeaudet.github.io/CV/)*
+- [x] 3-5: *[Project - HTML & CSS](https://juliettebeaudet.github.io/CV/)*
 ##### Block 4: Introduction - JavaScript
 - [x] 4-1: *JavaScript - Getting Started*
 - [x] 4-2: *JavaScript - For Array and Loop*
@@ -27,7 +27,7 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [x] 4-7: *JavaScript - Events*
 - [x] 4-8: *JavaScript - Web Storage*
 ##### Block 5: Introduction - JavaScript - Projects
-- [x] 5-1: *[Project - Meme Generator](juliettebeaudet.github.io/meme-generator/)*
+- [x] 5-1: *[Project - Meme Generator](https://juliettebeaudet.github.io/meme-generator/)*
 - [x] 5-2: *[Project - Art with Pixels](https://juliettebeaudet.github.io/pixel-art/)*
 - [x] 5-3: *[Project - To Do List](https://juliettebeaudet.github.io/to-do-list/)*
 
