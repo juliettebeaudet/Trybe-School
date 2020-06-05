@@ -1,3 +1,5 @@
+// to give state options
+
 const inputEstado = document.getElementById('estado');
 const todosEstados = [
   ['Acre', 'AC'],
@@ -30,13 +32,12 @@ const todosEstados = [
 ];
 
 function criarEstados() {
-  for (let i=0; i < todosEstados.length; i+=1){
+  for (let i = 0; i < todosEstados.length; i += 1) {
     const novoEstado = document.createElement('option');
     novoEstado.innerText = todosEstados[i][0];
     novoEstado.value = todosEstados[i][1];
     inputEstado.appendChild(novoEstado);
-  }    
+  }
 }
 window.onload = function () {
   criarEstados();
-}
