@@ -4,15 +4,12 @@
 // Bônus (opcional): tente fazer o mesmo exercício de forma recursiva .
 // Spoiler: É possível resolver com uma linha.
 
+let factorized = 0;
+function factorize(n) {
+for (let i = 0; i <= n; i += 1) {
+    }
+    factorized = n*i;
+    return factorized;
+  }
 
-let 
-const fatorial = n =>
-  if (n == 0) {
-    return 1;
-}
-var resp = n;
-while (n > 2) {
-    resp *= --n;
-}
-return resp;
-}
+  console.log(factorize(5));
