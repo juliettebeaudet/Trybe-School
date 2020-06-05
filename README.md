@@ -27,9 +27,9 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [x] 4-7: *JavaScript - Events*
 - [x] 4-8: *JavaScript - Web Storage*
 ##### Block 5: Introduction - JavaScript - Projects
-- [x] 5-1: *[Project - Meme Generator](juliettebeaudet.github.io/meme-generator/index.html)*
-- [x] 5-2: *[Project - Art with Pixels](https://juliettebeaudet.github.io/pixel-art/index.html)*
-- [x] 5-3: *[Project - To Do List](juliettebeaudet.github.io/to-do-list/index.html)*
+- [x] 5-1: *[Project - Meme Generator](juliettebeaudet.github.io/meme-generator/)*
+- [x] 5-2: *[Project - Art with Pixels](https://juliettebeaudet.github.io/pixel-art/)*
+- [x] 5-3: *[Project - To Do List](https://juliettebeaudet.github.io/to-do-list/)*
 
 ## Front-end development :hourglass_flowing_sand:
 ##### Block 6: Introduction - Front-end
