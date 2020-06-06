@@ -8,9 +8,12 @@
         let clickCount = 0;
         let camp = document.getElementById("num-clicks");
 
-        function countingClicks() {
-        clickCount += 1;
-        camp.innerHTML = clickCount;
-        }
+        // function countingClicks() {
+        // clickCount += 1;
+        // camp.innerHTML = clickCount;
+        // }
+
+        //com arrow function agora:
+        const countingClicks= () => {clickCount += 1; camp.innerHTML = clickCount;}
 
         clickedButton.addEventListener("click", countingClicks);
