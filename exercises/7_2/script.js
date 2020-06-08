@@ -52,3 +52,15 @@ function sizeArray(objeto){
 }
 console.log(sizeArray(lesson1));
 
+// 4. Crie uma função para listar os valores de um objeto.
+// Essa função deve receber um objeto como parâmetro.
+function listValues(objeto){
+  const arrayValues = Object.values(objeto);
+  return arrayValues;
+}
+console.log(listValues(lesson3));
+
+// Crie um objeto de nome allLessons, que deve agrupar todas as aulas através do Object.assign.
+// Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1, lesson2 e lesson3. 
+
+const allLessons = 
