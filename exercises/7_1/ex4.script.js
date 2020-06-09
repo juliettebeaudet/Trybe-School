@@ -11,8 +11,18 @@
 // Retorno: “Tryber Bebeto aqui!”
 // Um array com escopo global, que é o escopo do arquivo JS, nesse caso, contendo cinco strings com suas principais skills.
 
-// const function1 = (string) => ''
-// console.log(function1('Bebeto'));
+
+const function1 = (string) => {
+let mySentence = 'Tryber x aqui!';
+let wordArray = mySentence.split(' ');
+for (i=0; i<wordArray.length; i+=1){
+  if (wordArray[i] == 'x'){
+  `${string}` = wordArray[i];
+  }
+  return mySentence;
+}
+}
+console.log(function1('BlaBleBliBloBlu')); //returns error
 
 // Função 2: Escreva uma função que vai receber a string retornada da Função 1 como parâmetro.
 // Essa função deve concatenar as skills do array global à string que foi passada para
