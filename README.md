@@ -37,3 +37,10 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [x] 6-2: *JavaScript libraries and CSS frameworks*
 - [x] 6-3: *CSS Flexbox - Part 1*
 - [x] 6-4: *CSS Flexbox - Part 2*
+- [x] 6-5: *CSS Responsivo - Mobile first*
+- [x] 6-6: *[Project - Facebook signup page](https://juliettebeaudet.github.io/facebook/)*
+
+##### Block 7: Javascript ES6
+- [x] 7-1: *Let, const, arrow functions & template literals*
+- [x] 7-2: *Objects*
+- [x] 7-3: *Testes unitários em JavaScript*
