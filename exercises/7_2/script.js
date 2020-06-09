@@ -68,9 +68,9 @@ console.log(allLessons);
 
 function numberStudents(obj, key){
   let counter = 0;
-  const keyLessons = Object.keys(obj);
-  for (eachlesson in keyLessons){
-    counter += obj[keyLessons[eachlesson]][key]; //para acessar o valor numérico do objeto dentro do objeto
+  const theLessons = Object.keys(obj);
+  for (eachlesson in theLessons){
+    counter += obj[theLessons[eachlesson]][key]; //para acessar o valor numérico do objeto dentro do objeto
   }
   return counter;
 }
@@ -104,3 +104,30 @@ const verifyPairArrow = (curso, chave, valor) => curso[chave] === valor ? true:f
 console.log(verifyPairArrow(lesson3, 'turno', 'noite'));
 console.log(verifyPairArrow(lesson3, 'materia', 'Maria Clara'));
 
+//BONUS
+
+// 1. Crie uma função para contar quantos estudantes assistiram às aulas de Matemática.
+// Use o objeto criado no exercício 5 (allLessons).
+// function countingStudentsPerCourse(obj, courseValue){
+// let whatLesson = "";
+// let counting = 0;
+// const objEachLesson = Object.keys(obj); //access all subobjects (each lesson obj)
+//   for (eachKey in objEachLesson){
+//     if (objEachLesson[eachKey] == courseValue){//if it finds materia param
+//       whatLesson = //then we are in the right lesson (how to push this??)
+//       couting += whatLesson[numeroEstudantes];//and we need to count the students in this lesson object
+//     }
+//   }
+//   return counting;
+// }
+// console.log(countingStudentsPerCourse(allLessons, 'Matématica'));
+
+// 2. Crie uma função que deverá retornar um objeto que representa o relatório do professor
+// ou professora, as aulas que ele ou ela ministrou e o número total de estudantes.
+// Use o objeto criado no exercício 5:
+// console.log(createReport(allLessons, 'Maria Clara'))
+// /* {
+//   professor: 'Maria Clara',
+//   aulas: [ 'Matemática', 'Matemática' ],
+//   estudantes: 30
+// } */
