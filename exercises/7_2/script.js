@@ -66,5 +66,14 @@ console.log(allLessons);
 // 6. Usando o objeto criado no exercício 5,
 // crie uma função que retorne o número total de estudantes em todas as aulas.
 
-function numberStudents(){
+function numberStudents(obj, key){
+  let counter = 0;
+  const keyLessons = Object.keys(obj);
+  for (eachlesson in keyLessons){
+    counter += obj[keyLessons[eachlesson]][key]; //para acessar o valor numérico do objeto dentro do objeto
+  }
+  return counter;
 }
+console.log(numberStudents(allLessons, 'numeroEstudantes'));
+
+
