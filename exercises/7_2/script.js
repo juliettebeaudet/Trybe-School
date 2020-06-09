@@ -22,19 +22,15 @@ const lesson3 = {
 // Essa função deve possuir três parâmetros, sendo eles:
 // o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
 
-// function addMorning(objeto, chave, valor){
-// const addKey = lesson1turno;
-// const addValue = lesson1.turno;
-
-// const adAll = Object.assign(lesson2, addKey, addValue);
-
-// }
-
-// const adMorning = Object.assign(lesson2, Object.keys(lesson1[3]), Object.values(lesson1[3]));
-// console.log(lesson2);
-
-// console.log(lesson1['turno']);
-
+function addEntryToObject(objectDestination, newKey, newValue){
+const objectOrigin = {
+  newKey: newValue,
+}
+const addEntry = Object.assign(objectDestination, objectOrigin);
+return addEntry;
+}
+console.log(addEntryToObject(lesson2, 'turno', lesson1.turno));
+console.log(lesson1[3]);
 
 // 2. Crie uma função para listar as keys de um objeto.
 // Essa função deve receber um objeto como parâmetro.
@@ -63,4 +59,4 @@ console.log(listValues(lesson3));
 // Crie um objeto de nome allLessons, que deve agrupar todas as aulas através do Object.assign.
 // Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1, lesson2 e lesson3. 
 
-const allLessons = 
+// const allLessons = 
