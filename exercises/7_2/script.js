@@ -77,23 +77,30 @@ function numberStudents(obj, key){
 console.log(numberStudents(allLessons, 'numeroEstudantes'));
 
 // 7. Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto.
-// Por exemplo:
-// console.log(getValueByNumber(lesson1, 0));
-// Output: 'Matématica'
 
 function getValueByNumber(lesson, i){
 const allValues = Object.values(lesson);
 const valuePosition = allValues[i];
 return valuePosition;
 }
-
-console.log(getValueByNumber(lesson1, 2));
+console.log(getValueByNumber(lesson1, 2)); //Output: 'Matématica'
 
 // 8. Crie uma função que verifique se o par (chave / valor) existe na função.
 // Essa função deve possuir três parâmetros, sendo eles:
-// o objeto, o nome da chave e o valor da chave. Exemplo:
-// console.log(verifyPair(lesson3, 'turno', 'noite'));
-// // Output: true,
-// console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
-// // Output: false
+// o objeto, o nome da chave e o valor da chave. 
+
+function verifyPair(lesson, keyLesson, valueLesson){
+  let verify = true;
+  if (lesson[keyLesson] !== valueLesson){
+    verify = false;
+  }
+  return verify;
+}
+console.log(verifyPair(lesson3, 'turno', 'noite')); //true
+console.log(verifyPair(lesson3, 'materia', 'Maria Clara')); //false
+
+//do the same in on line now: arrow function and ternary
+const verifyPairArrow = (curso, chave, valor) => curso[chave] === valor ? true:false;
+console.log(verifyPairArrow(lesson3, 'turno', 'noite'));
+console.log(verifyPairArrow(lesson3, 'materia', 'Maria Clara'));
 
