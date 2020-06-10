@@ -2,8 +2,8 @@ const assert = require('assert');
 // escreva a função wordLengths para passar nos testes abaixo:
 function wordLengths(palavras){
 let arrayNumbers = [];
-for (i=0; i<palavras.length; i+=0){
-  arrayNumbers.push(palavras[i]);
+for (i=0; i<palavras.length; i+=1){
+  arrayNumbers.push(palavras[i].length);
 }
   return arrayNumbers;
 }
