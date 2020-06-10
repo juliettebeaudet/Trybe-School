@@ -4,7 +4,13 @@
 
 const assert = require('assert');
 // escreva a função addOne para passar nos testes abaixo:
-function (addOne)
+function addOne(array){
+  let arrayOne = [];
+  for (i=0; i<array.length; i+=1){
+    arrayOne[i] = array[i]+1;
+  }
+  return arrayOne;
+}
 //
 const myArray = [31, 57, 12, 5];
 const unchanged = [31, 57, 12, 5];
