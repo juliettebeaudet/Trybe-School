@@ -1,7 +1,7 @@
 function secondThirdSmallest(array) {
   let results = []
   array.sort(function (x, y) {
-      return x + y;
+      return x - y; //aqui era um - no lugar do + para ter o array crescendo
   });
   results = [array[1], array[2]];
   return results;
@@ -16,3 +16,6 @@ e, caso não esteja, altere o código para que ele passe nos testes.
 Lembre-se: testes pequenos e numerosos! Escreva um por vez e vá corrigindo
 a função aos poucos:
 */
+const assert = require('assert');
+assert.deepEqual(secondThirdSmallest(parameter), result);
+// retorna [ 8, 11 ] a primeira vez
