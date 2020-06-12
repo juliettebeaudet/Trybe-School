@@ -5,15 +5,15 @@
 //   altere-a para que passe nos testes. 
 
 const greetPeople = (people) => {
-  let greeting = 'Hello ';
+  let greeting = [];
 
-  for (const person in people) {
-    greeting += people[person];
+  for (i=0; i<people.length; i+=1) {
+    greeting.push(`Hello ${people[i]}`);
   }
   return greeting;
 };
 
-const parameter = ['Irina', 'Ashleigh', 'Elsa'];
+const parameter = ['Irina', 'Ashleigh', 'Elsa']; 
 const result = ['Hello Irina', 'Hello Ashleigh', 'Hello Elsa'];
 /*
   Use a variável parameter como parâmetro da função acima, escreva testes
@@ -22,3 +22,6 @@ const result = ['Hello Irina', 'Hello Ashleigh', 'Hello Elsa'];
   Lembre-se: testes pequenos e numerosos! Escreva um por vez e vá corrigindo
   a função aos poucos:
 */
+const assert = require('assert');
+assert.deepEqual(greetPeople(parameter), result);
+//esse primeiro mostrou que function inicial retorna erradamente 'Hello IrinaAshleighElsa'
