@@ -44,3 +44,4 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [x] 7-1: *Let, const, arrow functions & template literals*
 - [x] 7-2: *Objects*
 - [x] 7-3: *Testes unitários em JavaScript*
+- [x] 7-4: *Testando em pequenos passos (TDD)*
