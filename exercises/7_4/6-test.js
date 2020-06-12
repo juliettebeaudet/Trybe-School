@@ -1,6 +1,7 @@
 const removeVowels = (word) => {
   const characters = word.split('');
-  const results = [];
+  let results = '';
+  let counting = 0; // para criar o 1 2 3
 
   for (let i = 0; i < characters.length; i += 1) {
     if (
@@ -10,14 +11,14 @@ const removeVowels = (word) => {
       characters[i] === 'e' ||
       characters[i] === 'u'
     ) {
-      results.push(characters[i]);
+      counting += 1;
+      results += counting;
     } else {
-      results.push('_');
+      results += characters[i]; //isso ok conserva os consoantes 
     }
   }
   return results;
-};
-
+}
 
 const parameter = 'Dayane';
 const result = 'D1y2n3';
@@ -28,3 +29,8 @@ const result = 'D1y2n3';
   Lembre-se: testes pequenos e numerosos! Escreva um por vez e vá corrigindo
   a função aos poucos:
 */
+const assert = require('assert');
+assert.equal(removeVowels(parameter), result);
+// primeiro teste mostra que function retorna erradamente [ '_', 'a', '_', 'a', '_', 'e' ],
+//transformei estrutura de array para string
+// segundo foi "assignment to constant variable", modifiquei em let results
