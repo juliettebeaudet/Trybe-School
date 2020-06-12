@@ -107,20 +107,19 @@ console.log(verifyPairArrow(lesson3, 'materia', 'Maria Clara'));
 //BONUS
 
 // 1. Crie uma função para contar quantos estudantes assistiram às aulas de Matemática.
-// Use o objeto criado no exercício 5 (allLessons).
-// function countingStudentsPerCourse(obj, courseValue){
-// let whatLesson = "";
-// let counting = 0;
-// const objEachLesson = Object.keys(obj); //access all subobjects (each lesson obj)
-//   for (eachKey in objEachLesson){
-//     if (objEachLesson[eachKey] == courseValue){//if it finds materia param
-//       whatLesson = //then we are in the right lesson (how to push this??)
-//       couting += whatLesson[numeroEstudantes];//and we need to count the students in this lesson object
-//     }
-//   }
-//   return counting;
-// }
-// console.log(countingStudentsPerCourse(allLessons, 'Matématica'));
+// Use o objeto criado no exercício 5 (ou seja allLessons).
+
+function countingStudentsPerCourse(courseValue) {
+let counting = 0;
+const eachObjLesson = Object.keys(allLessons); //access all subobjects (each lesson obj)
+  for (eachKey in eachObjLesson){
+    if (allLessons[eachObjLesson[eachKey]].materia == courseValue) { //if topic is that course param
+      counting += allLessons[eachObjLesson[eachKey]].numeroEstudantes; //then count the students
+    }
+  }
+  return counting;
+}
+console.log(countingStudentsPerCourse('Matemática'));
 
 // 2. Crie uma função que deverá retornar um objeto que representa o relatório do professor
 // ou professora, as aulas que ele ou ela ministrou e o número total de estudantes.
