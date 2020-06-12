@@ -1,4 +1,4 @@
-// A função myFizzBuzz(num) recebe um número num e retorna "fizzbuzz" se o número 
+// 6. A função myFizzBuzz(num) recebe um número num e retorna "fizzbuzz" se o número 
 // for divisível por 3 e 5, retorna "fizz" se for divisível apenas por 3,
 // retorna "buzz" se divisível apenas por 5,
 // retorna o próprio número caso não seja divísivel por 3 ou 5 
