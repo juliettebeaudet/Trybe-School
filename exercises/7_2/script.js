@@ -22,15 +22,11 @@ const lesson3 = {
 // Essa função deve possuir três parâmetros, sendo eles:
 // o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
 
-function addEntryToObject(objectDestination, newKey, newValue){
-const objectOrigin = {
-  newKey: newValue,
-}
-const addEntry = Object.assign(objectDestination, objectOrigin);
-return addEntry;
-}
-console.log(addEntryToObject(lesson2, 'turno', lesson1.turno));
-console.log(lesson1[3]);
+const addMorning = (paramlesson) => {
+  paramlesson.turno = 'manhã';
+  return paramlesson;
+};
+console.log(addMorning(lesson2));
 
 // 2. Crie uma função para listar as keys de um objeto.
 // Essa função deve receber um objeto como parâmetro.
