@@ -49,5 +49,6 @@ The program has more than **1,500 hours** of classroom and online classes and co
 
 ##### Block 8: Javascript Higher Order Functions (HOFs)
 - [x] 8-1: *forEach, find, filter, some, every, sort*
+- [x] 8-2: *map, reduce*
 
 
