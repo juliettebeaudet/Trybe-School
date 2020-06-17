@@ -45,7 +45,7 @@ The program has more than **1,500 hours** of classroom and online classes and co
 - [x] 7-2: *Objects*
 - [x] 7-3: *Unit tests*
 - [x] 7-4: *Testing baby steps (TDD)*
-- [x] 7-5: *Project: unit tests practice with npm*
+- [x] 7-5: *Project - Unit tests practice with npm*
 
 ##### Block 8: Javascript Higher Order Functions (HOFs)
 - [x] 8-1: *forEach, find, filter, some, every, sort*
