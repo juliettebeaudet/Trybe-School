@@ -78,3 +78,15 @@ function smallerName() {
 }
 
 assert.equal(smallerName(), "Duna");
+
+// Aqui na real o correto seria de escrever do seguinte jeito, adicionando um paramêtro indice no forEach,
+// para garantir que a nameBook n fique vazia e possa ser comparada sem mexer com sua declaraçao inicial.
+// function smallerName() {
+//   let nameBook;
+//   books.forEach((book, i) => {
+//     const {length} = book.name;
+//     if(i === 0) nameBook = book.name;
+//     else if(length < nameBook.length) nameBook = book.name;
+//   });
+//   return nameBook;
+// }
