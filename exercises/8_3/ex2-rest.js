@@ -5,7 +5,8 @@
 const assert = require('assert')
 
 // escreva sum abaixo
-const sum = (...itens) => sum.reduce((item) => item1 + item2);//////NOPE
+const sum = (...rest) => rest.reduce((a,b) => a+b, 0);
+// lembrando que rest é um array e reduce acumula
 
 assert.equal(sum(), 0)
 assert.equal(sum(1), 1)
