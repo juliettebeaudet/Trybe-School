@@ -1,6 +1,10 @@
-This repository contains all learning activities developed by *[Juliette Beaudet](https://github.com/juliettebeaudet/)* while studying at [Trybe](https://www.betrybe.com/).
+This repository contains two folders.
+
+The *course-summaries* folder contains all course summaries written and compiled by *[Juliette Beaudet](https://github.com/juliettebeaudet/)* while studying at [Trybe](https://www.betrybe.com/).
+
+The *exercises* folder contains all learning activities developed within the same context.
 <br>
-The program has more than **1,500 hours** of classroom and online classes and covers front-end, back-end, computer science, software engineering, agile methodologies, and soft skills.
+The Trybe program has more than **1,500 hours** of classroom and online classes and covers front-end, back-end, computer science, software engineering, agile methodologies, and soft skills.
 ​
 ## Introduction - Web Development :white_check_mark:
 ##### Block 1: Introduction - Unix & Shell
