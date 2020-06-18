@@ -79,6 +79,12 @@ const expected_result = {
 
 function longestNamedBook() {
   // escreva seu código aqui
+  // 1) preparar uma function com condicional para retornar o maior nome, que será posicionada no acumulador
+  // (e treinar de escrever em uma linha com arrow e com ternário: condition ? exprIfTrue : exprIfFalse)
+const longBookName = (book, bookTwo) => (book.name.length > bookTwo.name.length ? book : bookTwo);
+  // 2) armazenar e retornar o livro com maior nome com reduce: primeiro paramêtro acumulador, que, dessa vez, vai ser apenas um objeto
+const bookWithLongestName = books.reduce(longBookName);
+return bookWithLongestName;
 }
 
 assert.deepEqual(longestNamedBook(), expected_result);
