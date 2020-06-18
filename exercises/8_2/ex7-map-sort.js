@@ -98,7 +98,7 @@ const expected_result = [
 
 function nameAndAge() {
   // escreva seu código aqui
-  // 1) criar o novo array de objetos com map e template literals
+  // 1) criar o novo array de objetos com map
   const objectsAuthors = books.map((book) => ({
     age: book.releaseYear - book.author.birthYear,
     author: book.author.name,
