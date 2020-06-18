@@ -19,7 +19,11 @@ const gunnar = {
 }
 
 // complete a assinatura da função abaixo
-const personLikes = () => `${name} is ${age} years old and likes ${likes.join(", ")}.`
+const personLikes = () => {
+  const {name, age, likes, nationality} = alex;
+  const {name, age, likes, nationality} = gunnar; 
+  return `${name} is ${age} years old and likes ${likes.join(", ")}.`
+};
 assert.equal(personLikes(alex), "Alex is 26 years old and likes fly fishing.")
 assert.equal(personLikes(gunnar), "Gunnar is 30 years old and likes hiking, scuba diving, taking pictures.")
     
