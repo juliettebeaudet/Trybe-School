@@ -98,12 +98,12 @@ const expected_result = [
 
 function nameAndAge() {
   // escreva seu código aqui
-  // 1) criar o novo array de objetos com map
+  // 1) criar o novo array de objetos com map, n precisa de template literals
   const objectsAuthors = books.map((book) => ({
     age: book.releaseYear - book.author.birthYear,
     author: book.author.name,
   }));
-  // 3) ordenar esses objetos com sort
+  // 2) ordenar esses objetos com sort, ordem crescente de idades no lançamento do livro
   const sortedObjectsAuthors = objectsAuthors.sort(function (a, b) {
     return a.age - b.age;
   });
