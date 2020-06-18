@@ -1,10 +1,11 @@
-This repository contains two folders.
+This repository contains two folders, both created while studying at [Trybe](https://www.betrybe.com/).
+The *course-summaries* folder contains all the compiled course summaries, so they can be consulted by peer students, whereas the *exercises* folder displays all the developed learning activities.
 
-The *course-summaries* folder contains all course summaries written and compiled by *[Juliette Beaudet](https://github.com/juliettebeaudet/)* while studying at [Trybe](https://www.betrybe.com/).
-
-The *exercises* folder contains all learning activities developed within the same context.
-<br>
 The Trybe program has more than **1,500 hours** of classroom and online classes and covers front-end, back-end, computer science, software engineering, agile methodologies, and soft skills.
+
+
+<br>
+
 ​
 ## Introduction - Web Development :white_check_mark:
 ##### Block 1: Introduction - Unix & Shell
