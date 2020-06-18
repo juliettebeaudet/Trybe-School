@@ -99,15 +99,15 @@ const expected_result = [
 function nameAndAge() {
   // escreva seu código aqui
   // 1) criar o novo array de objetos com map e template literals
-  const objectsAuthors = books.map((book) => {
-    const releaseAge = book.releaseYear - book.author.birthYear;
-    const authorName = book.author.name;
-    return `{
-    age: ${releaseAge},
-  author: ${authorName},
-  }`;
-  });
+  const objectsAuthors = books.map((book) => ({
+    age: book.releaseYear - book.author.birthYear,
+    author: book.author.name,
+  }));
   // 3) ordenar esses objetos com sort
+  const sortedObjectsAuthors = objectsAuthors.sort(function (a, b) {
+    return a.age - b.age;
+  });
+  return sortedObjectsAuthors;
 }
 
 assert.deepEqual(nameAndAge(), expected_result);
