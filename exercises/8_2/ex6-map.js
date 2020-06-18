@@ -1,4 +1,5 @@
-// 5. Encontre o livro com o maior nome.
+// 6. Crie um array com strings no formato
+// NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
 
 const assert = require('assert');
 
@@ -65,26 +66,19 @@ const books = [
   },
 ];
 
-const expected_result = {
-  author: {
-    birthYear: 1948,
-    name: 'George R. R. Martin'
-  },
-  genre: 'Fantasia',
-  id: 1,
-  name: 'As Crônicas de Gelo e Fogo',
-  releaseYear: 1991
-};
-// tenho que retornar o objeto livro inteiro!
+const expected_result = [
+  'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
+  'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
+  'Fundação - Ficção Científica - Isaac Asimov',
+  'Duna - Ficção Científica - Frank Herbert',
+  'A Coisa - Terror - Stephen King',
+  'O Chamado de Cthulhu - Terror - H. P. Lovecraft'
+];
 
-function longestNamedBook() {
+function formatedBookNames() {
   // escreva seu código aqui
-  // 1) preparar uma function com condicional para retornar o maior nome, que será posicionada no acumulador
-  // (e treinar de escrever em uma linha com arrow e com ternário: condition ? exprIfTrue : exprIfFalse)
-const longBookName = (book, bookTwo) => (book.name.length > bookTwo.name.length ? book : bookTwo);
-  // 2) armazenar e retornar o livro com maior nome com reduce: primeiro paramêtro acumulador, que, dessa vez, vai ser apenas um objeto
-const bookWithLongestName = books.reduce(longBookName);
-return bookWithLongestName;
+  const arrayBookStrings = books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
+  return arrayBookStrings;
 }
 
-assert.deepEqual(longestNamedBook(), expected_result);
+assert.deepEqual(formatedBookNames(), expected_result);
