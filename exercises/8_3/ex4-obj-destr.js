@@ -34,8 +34,8 @@ const people = [
 // escreva filterPeople abaixo
 
 filterPeople = (people) => {
-  const filteredPeople = people.filter(({bornIn, nationality}) => {
-    return (bornIn >= 1900 && bornIn < 2000) && nationality === 'Australian';
+  const filteredPeople = people.filter(({bornIn, nationality}) => { //passar object destructuring como paramêtro para poder chamar os valores correspondentes dentro da function
+    return (bornIn >= 1900 && bornIn < 2000) && nationality === 'Australian'; //condicionar e retornar o filter segundo critérios pedidos 
   });
   return filteredPeople;
 }
