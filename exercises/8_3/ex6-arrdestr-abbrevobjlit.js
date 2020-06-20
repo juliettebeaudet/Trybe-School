@@ -10,17 +10,29 @@ const chiron = ["Chiron", "Bugatti", 2016]
 
 // escreva toObject abaixo
 const toObject = (list) => {
-// 1. abbreviation object literal permite escrever chaves sem saber valores
-// 2. esses valores vao ser preenchidos graças ao array destructurator do param list
+// Dois jeitos de fazer
+// 1. preencher um objeto declrado com array destructuring do param list
 const [nome, marca, ano] = list;
 const objectCar = {
   name: nome,
   brand: marca,
   year: ano
 }
-return objectCar; //objeto prontinhooo
+return objectCar; 
 }
-  
+
+// 2. usar abbreviation object literal, que permite escrever chaves sem saber valores
+// aqui facilmente pois é a mesma sequência de nome marca e ano.
+// const toObject = (list) => {
+//   const [name, brand, year] = list;
+//   const objectCar = {
+//   name,
+//   brand,
+//   year,
+//   }
+//   return objectCar;
+// }; 
+
 assert.deepEqual(toObject(palio), { name: "Palio", brand: "Fiat", year: 2019 })
 assert.deepEqual(toObject(shelbyCobra), { name: "Shelby Cobra", brand: "Ford", year: 1963 })
 assert.deepEqual(toObject(chiron), { name: "Chiron", brand: "Bugatti", year: 2016 })
