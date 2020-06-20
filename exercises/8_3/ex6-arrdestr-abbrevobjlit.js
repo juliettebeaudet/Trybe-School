@@ -10,7 +10,7 @@ const chiron = ["Chiron", "Bugatti", 2016]
 
 // escreva toObject abaixo
 const toObject = (list) => {
-// Dois jeitos de fazer
+// Diferentes jeitos de fazer
 // 1. preencher um objeto declrado com array destructuring do param list
 const [nome, marca, ano] = list;
 const objectCar = {
@@ -32,6 +32,9 @@ return objectCar;
 //   }
 //   return objectCar;
 // }; 
+
+// 3. em uma linha
+// const toObject = ([name, brand, year]) => ({name, brand, year});
 
 assert.deepEqual(toObject(palio), { name: "Palio", brand: "Fiat", year: 2019 })
 assert.deepEqual(toObject(shelbyCobra), { name: "Shelby Cobra", brand: "Ford", year: 1963 })
