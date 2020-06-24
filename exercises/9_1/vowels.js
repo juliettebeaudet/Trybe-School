@@ -8,7 +8,14 @@
 //   vowels('Why?') --> 0
 
 function vowels(str) {
-
+const eachLetter = str.split('');
+let count = 0;
+eachLetter.forEach(letter => {
+  if (letter === 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter === 'u' || letter === 'A' || letter === 'E' || letter === 'I' || letter === 'O' || letter === 'U') {
+    count += 1;
+  }
+});
+return count;
 }
 
 module.exports = vowels;
