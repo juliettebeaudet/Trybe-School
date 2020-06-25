@@ -1,17 +1,19 @@
 const exjest = require('./exjest')
 
-test('ex 1 sum 9', () => {
+test('ex1 sum 9', () => {
   expect(exjest.sum(4, 5)).toBe(9);
 });
 
-test('ex 1 sum 50', () => {
+test('ex1 sum 50', () => {
   expect(exjest.sum(0, 50)).toBe(50);
 });
 
-// test('ex 1 testar string error', () => {
-//   expect(exjest(4,'5')).toBe(9);
-// });
-// isso falhou como previsto: mensagem param tem que ser number.
+test('ex1 n aceitar string como param', () => {
+  expect(() => {
+    exjest.sum(4, '5');
+  }).toThrow('nooope cuidado, você entrou uma string como parâmetro');
+});
+//isso falhou e retorno o throw como previsto
 
 test('ex2 testar array', () => {
   expect(exjest.myIndexOf([1, 2, 3, 4], 3)).toBe(2);
