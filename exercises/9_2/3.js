@@ -13,4 +13,4 @@ const getPlanet = () => {
 };
 
 // imprime Marte depois de 4 segundos
-setTimeout(() => console.log(getPlanet()), 4000);
+setTimeout(() => getPlanet(), 4000);
