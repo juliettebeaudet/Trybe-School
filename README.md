@@ -61,5 +61,6 @@ The Trybe program has more than **1,500 hours** of classroom and online classes 
 ##### Block 9: Jest, Javascript asynchronous, callbacks and promises
 - [x] 9-1: *First steps using Jest*
 - [x] 9-2: *Javascript asynchronous and callbacks*
+- [x] 9-3: *Javascript Promises*
 
 
