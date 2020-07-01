@@ -6,3 +6,10 @@ const uppercase = (str, callback) => {
   callback(str.toUpperCase());
 }
 
+test('strings go to uppercase', done => 
+function callback(data){
+  expect(data).toBe(data.toUpperCase());
+  done();
+
+  uppercase(callback);
+});
