@@ -79,13 +79,19 @@ function authorWith3DotsOnName() {
   // nivel EASY: chamar diretamente o nome do autor que observei no array:
   // const initials = books.find(book => book.author.name == 'J. R. R. Tolkien');
   // return initials.name;
-  // }
+// }
 
   // nivel MEDIUM: criar e condicionar alguma regra para pegar o nome com três iniciais
   // (podem ser três coisas: split('.') que cria array de 4 elementos / contador dos três pontos / pontos posicionados 1 3 5)
-  const bookWithThreeInitialsName = books.find(book => book.author.name.split('.').length === 4);
+  // const bookWithThreeInitialsName = books.find(book => book.author.name.split('.').length === 4);
+  // return bookWithThreeInitialsName.name;
+// }
+
+  // nivel HARD: com regex
+  const initialsRegex = /^(\w\.\s*){3} .*/;
+  // começa com o conjunto qualquer letra/ponto/possivelmente espaço três vezes e continua com qualquer string
+  const bookWithThreeInitialsName = books.find(book => (initialsRegex.test(book.author.name)));
   return bookWithThreeInitialsName.name;
 }
-  // nivel HARD: com regex
 
 assert.deepEqual(authorWith3DotsOnName(), expected_result);
