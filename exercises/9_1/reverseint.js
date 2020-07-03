@@ -9,7 +9,8 @@
 //   reverseInt(-90) === -9
 
 function reverseInt(n) {
-// pendente
-}
+const reverse = parseFloat(n.toString().split('').reverse().join('')) * Math.sign(n);
+return reverse;
+} 
 
 module.exports = reverseInt;
