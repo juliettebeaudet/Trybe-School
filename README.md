@@ -62,5 +62,10 @@ The Trybe program has more than **1,500 hours** of classroom and online classes 
 - [x] 9-1: *First steps using Jest*
 - [x] 9-2: *Javascript asynchronous and callbacks*
 - [x] 9-3: *Javascript Promises*
+- [x] 9-4: *Project - Shopping Cart*
+
+##### Block 10: Testing asynchronous code with Jest
+- [x] 10-1: *Testing asynchronous code*
+- [x] 10-1: *Simulating behaviours*
 
 
