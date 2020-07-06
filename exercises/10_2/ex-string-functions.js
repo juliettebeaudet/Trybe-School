@@ -8,3 +8,9 @@ const uppercase = (str) => str.toUpperCase();
 const firstLetter = (str) => str.split('')[0];
 
 const concatenate = (str, string) => str + string;
+
+module.exports = {
+  uppercase,
+  firstLetter,
+  concatenate
+};
