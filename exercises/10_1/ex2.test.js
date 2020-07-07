@@ -32,20 +32,16 @@ const getUserName = (userID) => {
 // Dica: Veja os dados falsos utilizados no banco de dados, disponíveis na variável users,
 // para saber quais IDs existem.
 
-// describe('Quando o usuário é encontrado', () => {
-//   test('Retorne usuários', () => {
-//     // expect.assertions(2);
-//     return getUserName('4').then(user => {
-//       expect(user.name).toEqual('Mark');
-//     });
-//   });
-// });
-// return error, undefined, explicado pelo console.log acima
+  test('Quando o usuário é encontrado', () => {
+    // expect.assertions(1);
+    return getUserName(4).then((user) => {
+      expect(user).toBe('Mark');
+    });
+  });
 
-// describe('Quando o usuário não é encontrado', () => {
-//   test('Retorne usuários', () => {
-//     return getUserName('2').catch(error =>
-//       expect(error).toEqual({ error: 'Nenhum usuário com esse ID.' })
-//     );
-//   });
-// });
+  test('Erro quando o usuário n é encontrado', () => {
+    // expect.assertions(1);
+    return getUserName(2).catch((item) =>
+    expect(item).toEqual({ error: 'User with ' + 2 + ' not found.' })
+  );
+  });
