@@ -21,12 +21,14 @@ expect(strings.uppercase('Bla')).toBe('bla');
 // Após repetir a implementação, restaure a implementação original
 // e crie os testes necessários para validar.
 
-// strings.uppercase.mockRestore();
-// strings.uppercase('testando');
-// expect(strings.uppercase).toHaveBeenCalled();
-// expect(strings.uppercase).toHaveBeenCalledTimes(1);
-// expect(strings.uppercase).toHaveBeenCalledWith('testando');
-// expect(strings.uppercase('testando')).toBe('TESTANDO');
+strings.uppercase.mockRestore();
+jest.mock('./ex-string-functions.js');
+
+strings.uppercase('testando');
+expect(strings.uppercase).toHaveBeenCalled();
+expect(strings.uppercase).toHaveBeenCalledTimes(1);
+expect(strings.uppercase).toHaveBeenCalledWith('testando');
+expect(strings.uppercase('testando')).toBe('TESTANDO');
 // n funciona!
 
 
