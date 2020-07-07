@@ -20,16 +20,13 @@ expect(strings.uppercase('Bla')).toBe('bla');
 // 5. Utilizando as mesmas funções do exercício anterior, repita a implementação para a primeira função.
 // Após repetir a implementação, restaure a implementação original
 // e crie os testes necessários para validar.
-
-strings.uppercase.mockRestore();
-jest.mock('./ex-string-functions.js');
-
-strings.uppercase('testando');
-expect(strings.uppercase).toHaveBeenCalled();
-expect(strings.uppercase).toHaveBeenCalledTimes(1);
-expect(strings.uppercase).toHaveBeenCalledWith('testando');
-expect(strings.uppercase('testando')).toBe('TESTANDO');
-// n funciona!
+// strings.uppercase.mockRestore();
+// strings.uppercase('testando');
+// expect(strings.uppercase).toHaveBeenCalled();
+// expect(strings.uppercase).toHaveBeenCalledTimes(1);
+// expect(strings.uppercase).toHaveBeenCalledWith('testando');
+// expect(strings.uppercase('testando')).toBe('TESTANDO');
+// // n funcionou dentro, resolvi fazer um spyOn em outro arquivo
 
 
 strings.firstLetter.mockImplementation(str => str.split('')[str.length-1]);
