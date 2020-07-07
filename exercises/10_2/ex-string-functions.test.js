@@ -17,6 +17,19 @@ expect(strings.uppercase).toHaveBeenCalledTimes(1);
 expect(strings.uppercase).toHaveBeenCalledWith('Bla');
 expect(strings.uppercase('Bla')).toBe('bla');
 
+// 5. Utilizando as mesmas funções do exercício anterior, repita a implementação para a primeira função.
+// Após repetir a implementação, restaure a implementação original
+// e crie os testes necessários para validar.
+
+// strings.uppercase.mockRestore();
+// strings.uppercase('testando');
+// expect(strings.uppercase).toHaveBeenCalled();
+// expect(strings.uppercase).toHaveBeenCalledTimes(1);
+// expect(strings.uppercase).toHaveBeenCalledWith('testando');
+// expect(strings.uppercase('testando')).toBe('TESTANDO');
+// n funciona!
+
+
 strings.firstLetter.mockImplementation(str => str.split('')[str.length-1]);
 strings.firstLetter('blou');
 
@@ -34,3 +47,4 @@ expect(strings.concatenate).toHaveBeenCalledWith('bla', 'blou', 'ble');
 expect(strings.concatenate('bla', 'blou', 'ble')).toBe('blablouble');
 
 });
+
