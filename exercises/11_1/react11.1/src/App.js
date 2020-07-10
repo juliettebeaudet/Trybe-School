@@ -12,9 +12,10 @@ const task = (value) => {
 // 3.crie uma array de compromissos e use a função map para que cada item do array apareça,
 // como um item de lista, no seu componente App.
 
-const tasks = (intro) => {
-  const arrayTasks = ['item 1', 'item 2', 'item 3'];
-  return arrayTasks.map(i => intro + i);
+const tasks = () => {
+  const arrayTasks = ['respirar', 'sorrir', 'aprender'];
+  // return arrayTasks.map(i => intro + i);
+  return arrayTasks.map(i => <li>{i}</li>);
 }
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
         </p>
         {/* 2. chame dentro dentro do seu componente App (não se esqueça da sintaxe JSX!) - ou seja {}. */}
         {/* <ul>{task('item 1')}</ul> */}
-        <ul>{tasks('Devo fazer')}</ul>
+        <ul>{tasks()}</ul>
         
         <a
           className="App-link"
