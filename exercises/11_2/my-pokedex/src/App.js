@@ -9,7 +9,14 @@ import Allpokemons from './data';
 
 class Pokemon extends React.Component{
   render() {
-    return 
+    return (
+      <div>
+      <p>{this.props.name}</p>
+      <p>{this.props.type}</p>
+      <p>{`${this.props.weight} ${this.props.unit}`}</p>
+      <img src={this.props.image} />
+      </div>
+    );   
   }
 }
 
@@ -19,14 +26,22 @@ class Pokemon extends React.Component{
 
 class Pokedex extends React.Component{
   render() {
-    return 
+    return Allpokemons.map(pokemon => (
+    <Pokemon
+      name={pokemon.name}
+      type={pokemon.type}
+      image={pokemon.image}
+      weight={pokemon.averageWeight.value}
+      unit={pokemon.averageWeight.measurementUnit}
+    />
+    ));
   }
 }
-
+  
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -39,7 +54,8 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <Pokedex />
     </div>
   );
 }
