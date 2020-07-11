@@ -1,0 +1,28 @@
+{
+  "name": "sd-0x-week11-project-jest",
+  "version": "1.0.0",
+  "description": "Project for block 11",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betrybe/sd-0x-week11-project-jest.git"
+  },
+  "keywords": [
+    "javascript",
+    "tests",
+    "jest"
+  ],
+  "author": "Mauricio Hamaji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/betrybe/sd-0x-week11-project-jest/issues"
+  },
+  "homepage": "https://github.com/betrybe/sd-0x-week11-project-jest#readme",
+  "devDependencies": {
+    "acorn": ">=5.7.4",
+    "jest": "^24.9.0",
+    "minimist": ">=1.2.2"
+  }
+}
