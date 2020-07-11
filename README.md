@@ -66,6 +66,13 @@ The Trybe program has more than **1,500 hours** of classroom and online classes 
 
 ##### Block 10: Testing asynchronous code with Jest
 - [x] 10-1: *Testing asynchronous code*
-- [x] 10-1: *Simulating behaviours*
+- [x] 10-2: *Mock functions*
+- [x] 10-3: *Project - asynchronous jest and mocking*
+
+##### Block 11: React
+- [x] 11-1: *Introduction to React*
+- [x] 11-2: *Components and props*
+- [x] 11-3: *Project - Movie Cards Library*
+
 
 
