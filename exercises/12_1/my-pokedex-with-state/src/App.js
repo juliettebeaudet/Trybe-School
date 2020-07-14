@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Allpokemons from './data';
+import allPokemons from './data';
 
 // 1. Altere a sua página para que, ao invés de exibir toda a lista de pokémons,
 // ela exiba um pokémon por vez.
@@ -9,10 +9,7 @@ import Allpokemons from './data';
 // e depois o próximo, e assim sucessivamente.
 // Ao se chegar ao último pokémon da lista, a pokedex deve voltar para o primeiro pokémon
 // no apertar do botão.
-// baby steps:
-// a) criar a situação inicial que é o pokemon, Pikachu, com um botão. 
-// b) setState para que sempre que o button for clickado, passar pelo proximo pokemon.
-// c) condicionar para caso for o ultimo pokemon do objeto no Allpokemons, volte ao primeiro.
+
 
 class Pokemon extends React.Component{
   render() {
@@ -34,40 +31,42 @@ class Pokedex extends React.Component{
   constructor(props) {
     super(props); {
       this.state = {pokemonIndex: 0};
-      // colocar o primeiro pokemon como estado inicial, how?
+      // colocar o primeiro pokemon como estado inicial
     }
   }
 
-  nextPokemon = () => {
-    // function para ir para próximo pokemon
-    this.setState(state => ({
-      pokemonIndex: (state.pokemonIndex + 1)
-    }));
+  handleClick = () => {
+    this.nextPokemon(this.state);
   }
-  //n sei como condicionar para que volte para primeiro pokemon quando objeto pokemons acabar
+
+  nextPokemon = (state) => {
+    // function para ir para próximo pokemon
+    this.setState({
+      pokemonIndex: state.pokemonIndex > allPokemons.length ? 0 : state.pokemonIndex + 1,
+    }) 
+  }
+// condicionando para que retorne ao indice 0 quando acabar a lista
 
   render() {
-    const allPokemons = Allpokemons.map(pokemon => 
-      <Pokemon
-        name={pokemon.name}
-        type={pokemon.type}
-        image={pokemon.image}
-        weight={pokemon.averageWeight.value}
-        unit={pokemon.averageWeight.measurementUnit}
-        />
-    );
+    const { name, type, image, averageWeight } =  allPokemons[this.state.pokemonIndex];
+      
     return (
       <section>
-      <div>{allPokemons}</div>
-      <button onClick={() => this.nextPokemon}>See next Pokemon</button>
+      <Pokemon
+        name={name}
+        type={type}
+        image={image}
+        weight={averageWeight.value}
+        unit={averageWeight.measurementUnit}
+        />
+      <button onClick={this.handleClick}>See next Pokemon</button>
     </section>
     );
   }
 }
-// o que usar no lugar do map para que apareça apenas um e ir avançando com indice ao clicar o button?
+// em vez do map, usar um pokemon por vez e funcionar com index
 
-
-// RENDERIZAR TUDO: primeiro pokemon + botao. A priori fica igual.
+// RENDERIZAR TUDO
 function App() {
   return (
     <div className="App">
