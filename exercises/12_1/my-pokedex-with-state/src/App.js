@@ -42,10 +42,10 @@ class Pokedex extends React.Component{
   nextPokemon = (state) => {
     // function para ir para próximo pokemon
     this.setState({
-      pokemonIndex: state.pokemonIndex > allPokemons.length ? 0 : state.pokemonIndex + 1,
+      pokemonIndex: (state.pokemonIndex + 1) % allPokemons.length,
     }) 
   }
-// condicionando para que retorne ao indice 0 quando acabar a lista
+// pode também fazer condicionando para que retorne ao indice 0 quando acabar a lista
 
   render() {
     const { name, type, image, averageWeight } =  allPokemons[this.state.pokemonIndex];
