@@ -33,11 +33,18 @@ class App extends Component {
           <Alert
             hideComponent={this.changeShowComponent}
             contentTitle="Modal"
-            content="Coloque qualquer coisa aqui."
-          />}
+            content="Isso aqui deve ficar 3s!"
+          >
+          </Alert>}
       </div>
     )
   }
 }
 
 export default App;
+
+// 2. Usando o código anterior, refatore a aplicação para que o Alert funcione com qualquer informação.
+// O componente deverá receber, como filho, um objeto com a estrutura
+// {title: "Algum título", content: "Algum conteúdo", timeSeconds: 3 }.
+// O filho é quem definirá o tempo que o modal permanece na tela com o valor da chave timeSeconds.
+// Use PropTypes para realizar a validação do formato do objeto.
