@@ -16,8 +16,8 @@ Pictures.propTypes = {
   alt: PropTypes.string.isRequired,
   height: PropTypes.number,
 };
-Pictures.defaultProps = {
-  height: 400,
-};
+// Pictures.defaultProps = {
+//   height: 400,
+// };
 
 export default Pictures;
