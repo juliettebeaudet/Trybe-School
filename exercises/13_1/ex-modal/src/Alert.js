@@ -14,3 +14,9 @@ const Alert = (props) => {
 }
 
 export default Alert;
+
+Alert.propTypes = {
+  hideComponent: PropTypes.func,
+  contentTitle: PropTypes.string,
+  content: PropTypes.string
+};
