@@ -17,10 +17,19 @@ const Alert = (props) => {
 
 export default Alert;
 
+// Alert.propTypes = {
+//   hideComponent: PropTypes.func.isRequired,
+//   contentTitle: PropTypes.string.isRequired,
+//   content: PropTypes.string.isRequired,
+// };
+
 Alert.propTypes = {
   hideComponent: PropTypes.func.isRequired,
-  contentTitle: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
+  children: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+    timeSeconds: PropTypes.number.isRequired,
+  }),
 };
 
 Alert.defaultProps = {
