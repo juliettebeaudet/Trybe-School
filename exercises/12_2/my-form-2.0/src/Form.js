@@ -65,7 +65,7 @@ class MyForm extends React.Component {
       city: '',
       brazilState: '',
       });
-    document.getElementById('consolidate').innerHTML = '';
+    // document.getElementById('consolidate').innerHTML = '';
   }
 
   // showInputs() {
@@ -172,6 +172,7 @@ class MyForm extends React.Component {
         </button> */}
 
         <p id="consolidate">
+          Resumo dos seus dados:
         {this.renderConsolidate()}
         </p>
 
