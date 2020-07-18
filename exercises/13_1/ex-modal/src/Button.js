@@ -15,6 +15,7 @@ const Button = (props) => {
 }
 export default Button;
 
+//1. Crie a checagem de tipo para todas as props dos componentes.
 Button.propTypes = {
   showComponent: PropTypes.func,
   isDisable: PropTypes.bool,
