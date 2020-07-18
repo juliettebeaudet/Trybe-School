@@ -42,7 +42,6 @@ class MyForm extends React.Component {
       city: '',
       brazilState: '',
       addressCheck: '',
-      submit: '',
     };
     this.handleChange = this.handleChange.bind(this);
     this.cleanForm = this.cleanForm.bind(this);
