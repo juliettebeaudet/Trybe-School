@@ -46,6 +46,7 @@ class MyForm extends React.Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.cleanForm = this.cleanForm.bind(this);
+    // this.showInputs = this.showInputs.bind(this);
   }
 
   handleChange (event) {
@@ -57,7 +58,7 @@ class MyForm extends React.Component {
 
   cleanForm() {
     this.setState({
-      name: '',
+      nome: '',
       email: '',
       cpf: '',
       address: '',
@@ -67,16 +68,22 @@ class MyForm extends React.Component {
     document.getElementById('consolidate').innerHTML = '';
   }
 
+  // showInputs() {
+  //   this.setState({
+  //     submit: 
+  //   })
+  // }
+
   renderConsolidate() {
     return (
-    <p>
+      <div>
       {this.state.nome} <br/>
       {this.state.email}<br/>
       {this.state.cpf}<br/>
       {this.state.address}<br/>
       {this.state.city}<br/>
       {this.state.brazilState}<br/>
-    </p>
+      </div>
     )
   }
 
@@ -94,7 +101,7 @@ class MyForm extends React.Component {
               maxlength="40"
               required="required"
               value={this.state.name}
-              // style={{ textTransform: 'uppercase'}}
+              style={{ textTransform: 'uppercase'}}
               onChange={this.handleChange}
             />{' '}
             <br />
@@ -160,13 +167,13 @@ class MyForm extends React.Component {
           </fieldset>
         </form>
 
-        <button type="submit">
+        {/* <button type="submit" onClick={this.showInputs}>
           Consolidar form
-        </button>
+        </button> */}
 
-        <div id="consolidate">
+        <p id="consolidate">
         {this.renderConsolidate()}
-        </div>
+        </p>
 
         <button className="clean" onClick={this.cleanForm}>
         Limpar form
