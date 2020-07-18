@@ -10,6 +10,8 @@ import allPokemons from './data';
 // Ao se chegar ao último pokémon da lista, a pokedex deve voltar para o primeiro pokémon
 // no apertar do botão.
 
+// 2. Sua pokedex deve ter dois botões contendo os tipos Fire e Psychic. A partir dessa seleção, a pokedex deve circular somente pelos pokémons daquele tipo. Quando a página carrega, um desses filtros deve estar selecionado.
+
 
 class Pokemon extends React.Component{
   render() {
@@ -30,26 +32,39 @@ class Pokemon extends React.Component{
 class Pokedex extends React.Component{
   constructor(props) {
     super(props); {
-      this.state = {pokemonIndex: 0};
+      this.state = {
+        pokemonIndex: 0,
+        pokemonType: 'Fire',
+      };
       // colocar o primeiro pokemon como estado inicial
     }
   }
 
-  handleClick = () => {
-    this.nextPokemon(this.state);
+  handleClick = (listLength) => {
+    this.nextPokemon(this.state, listLength);
   }
-
-  nextPokemon = (state) => {
+  nextPokemon = (state, listLength) => {
     // function para ir para próximo pokemon
     this.setState({
-      pokemonIndex: (state.pokemonIndex + 1) % allPokemons.length,
+      pokemonIndex: state.pokemonIndex + 1 >= listLength ? 0 : state.pokemonIndex + 1
     }) 
   }
-// pode também fazer condicionando para que retorne ao indice 0 quando acabar a lista
+  // pode também fazer usando modulo (ex1)
+  // pokemonIndex: (state.pokemonIndex + 1) % allPokemons.length,
+
+  setFilter = (state, filter) => {
+    this.setState({
+      pokemonIndex: state.pokemonIndex,
+      pokemonType: filter,
+    })
+  }
 
   render() {
-    const { name, type, image, averageWeight } =  allPokemons[this.state.pokemonIndex];
-      
+    const filteredPokemons = allPokemons
+    .filter(pokemon => this.state.pokemonType === pokemon.type);
+    // const { name, type, image, averageWeight } =  allPokemons[this.state.pokemonIndex]; (ex1)
+    const { name, type, image, averageWeight } =  filteredPokemons[this.state.pokemonIndex];
+ 
     return (
       <section>
       <Pokemon
@@ -59,12 +74,16 @@ class Pokedex extends React.Component{
         weight={averageWeight.value}
         unit={averageWeight.measurementUnit}
         />
-      <button onClick={this.handleClick}>See next Pokemon</button>
+      <button onClick={() => this.setFilter(this.state, 'Fire')}>Fire</button>
+      <button onClick={() => this.setFilter(this.state, 'Psychic')}>Psychic</button>
+      <br /><br />
+      <button onClick={() => this.handleClick(filteredPokemons.length)}>See next Pokemon</button>
     </section>
     );
   }
 }
-// em vez do map, usar um pokemon por vez e funcionar com index
+// em vez do map do ex anterior, usar um pokemon por vez e funcionar com index (ex1)
+// integrar filtros jà aqui (ex2)
 
 // RENDERIZAR TUDO
 function App() {
