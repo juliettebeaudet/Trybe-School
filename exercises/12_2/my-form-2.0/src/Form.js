@@ -130,8 +130,8 @@ class MyForm extends React.Component {
             <label for="endereço">Endereço:</label>
             <input
               type="text"
-              id="endereço"
-              name="endereço"
+              id="address"
+              name="address"
               maxlength="200"
               required="required"
               value={this.state.address}
@@ -141,8 +141,8 @@ class MyForm extends React.Component {
             <label for="cidade">Cidade:</label>
             <input
               type="text"
-              id="cidade"
-              name="cidade"
+              id="city"
+              name="city"
               maxlength="28"
               required="required"
               value={this.state.city}
@@ -152,8 +152,8 @@ class MyForm extends React.Component {
             <label for="estado">Estado:</label>
             <select
               type="text"
-              id="estado"
-              name="cidade"
+              id="brazilState"
+              name="brazilState"
               required="required"
               value={this.state.brazilState}
               onChange={this.handleChange}
