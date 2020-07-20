@@ -12,24 +12,35 @@ class App extends React.Component {
     this.fetchDogsApi = this.fetchDogsApi.bind(this);
   }
 
-  componentDidMount() {
-    this.fetchDogsApi();
-  }
-
   fetchDogsApi() {
     fetch("https://dog.ceo/api/breeds/image/random")
       .then(res => res.json())
       .then(result => this.setState({ data: result }));
   }
-
   // Estrutura de dados que api retorna:
   // {
   //   "message": "https:\/\/images.dog.ceo/breeds/bulldog-french/n02108915_5306.jpg",
   //   "status": "success"
   // }
 
+  componentDidMount() {
+    this.fetchDogsApi();
+  }
+
+  // A cada tentativa de atualização do componente,
+  // verifique se o campo message tem a string terrier.
+  // Se sim, não atualize o componente;
   shouldComponentUpdate(nextProps, nextState) {
-    
+    if (nextState.data.message.includes("terrier")) {
+      return false;
+    }
+    return true;
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    localStorage.setItem("last-dog-image", prevState.data.message);
+    const breed = this.state.data.message.split("/")[4];
+    alert(breed);
   }
 
   render() {
