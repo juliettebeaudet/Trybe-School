@@ -10,6 +10,9 @@ const Home = () => (
     <Link to="/about">About</Link>
     <Link to="/users">Users</Link>
     <Link to="/strict-access">Strict Access</Link>
+    {/* 14. Adicione no componente App uma rota que mapeie o caminho de URL "/strict-access"
+    para o componente StrictAccess. Para poder testar o fluxo de autenticação,
+    passe para a prop user de StrictAccess diferentes valores para as propriedades username e password. */}
   </div>
 );
 

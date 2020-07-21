@@ -1,4 +1,4 @@
-// StrictAccess deve receber um objeto user como props.
+// 12. StrictAccess deve receber um objeto user como props.
 // Se username e password de user for "joao" e "1234", respectivamente,
 // o componente StrictAccess renderiza um parágrafo que diz "Welcome joao!".
 // Caso username ou password não sejam os valores esperados,
