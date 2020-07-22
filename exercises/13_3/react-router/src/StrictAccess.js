@@ -8,13 +8,15 @@
 import React from 'react';
 import { Redirect, Link } from 'react-router-dom';
 
-function StrictAccess(props) {
-  const user = props.match.params.user;
+function StrictAccess( {user} ) {
   if (user.username === "joao" && user.password === "1234") return <h2>Welcome {user.username}!</h2>
-  
-  return alert("Access denied") (
-    <Redirect to="/" />
-  );
+
+  return (
+    <div>
+      {alert("Access denied")}
+      <Redirect to="/" />
+    </div>
+  )
 }
   
 export default StrictAccess;

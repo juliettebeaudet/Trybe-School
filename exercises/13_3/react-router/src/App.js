@@ -7,6 +7,11 @@ import StrictAccess from './StrictAccess';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.user = {username:"jeanne", password:"1234"};
+  }
+
   render() {
     return (
       <BrowserRouter>
@@ -16,7 +21,8 @@ class App extends Component {
         <Route exact path="/" component={Home} />
         <Route path="/users/:id" component={Users} />
         <Route path="/users" render={(props ) => <Users {...props} greetingMessage="Good morning" />} />
-        <Route path="/strict-access/" render={(props) => <StrictAccess {...props} user= {username:"joao", password:"1234"} /> }/>
+        {/* <Route path="/strict-access/:userLog" component={StrictAccess} /> */}
+        <Route path="/strict-access/" render={(props) => <StrictAccess {...props} user={this.user} />} />
         <Route path="/about" component={About} />
         </Switch>
       </BrowserRouter>
