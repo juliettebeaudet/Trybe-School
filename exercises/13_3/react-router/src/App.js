@@ -14,10 +14,10 @@ class App extends Component {
         <Switch>
           {/* Dentro do Switch, ordenar do mais especifico ao mais genêrico */}
         <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/strict-access" component={StrictAccess} />
-        {/* <Route path="/users" render={(props ) => <Users {...props} greetingMessage="Good morning" />} /> */}
+        <Route path="/strict-access/:user" component={StrictAccess} />
         <Route path="/users/:id" component={Users} />
+        <Route path="/users" render={(props ) => <Users {...props} greetingMessage="Good morning" />} />
+        <Route path="/about" component={About} />
         </Switch>
       </BrowserRouter>
     );
