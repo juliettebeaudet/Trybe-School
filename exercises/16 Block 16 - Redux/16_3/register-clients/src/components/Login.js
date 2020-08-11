@@ -1,25 +1,31 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-import actionLogin from '../actions';
+import actionLogin, { LOG_IN } from '../actions';
+// import loginReducer from '../reducers';
 
 class Login extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      email: '',
+      password: '',
+    }
+  }
   render() {
-    if (!this.props.logged) {
+    const { logged, login } = this.props;
+    const { email, password } = this.state;
+    if (!logged) {
       return (
         <div>
           <p>Faça seu log-in aqui:</p>
-          <form>
-            <label>
-              <input type="text" value="" />
-              Email
-            </label>
-            <label>
-              <input type="text" value="" />
-              Senha
-            </label>
-          </form>
-          <button onClick={this.props.loggingIn}>LOG IN</button>
+          <input type="text" value={email} placeholder="Email"
+          onChange={e => this.setState({email: e.target.value })}
+          />
+          <input type="text" value={password} placeholder="Senha"
+          onChange={e => this.setState({password: e.target.value })}
+          />
+          <button onClick={() => login(email, password)}>LOG IN</button>
         </div>
       );
     }
@@ -27,10 +33,14 @@ class Login extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => ({});
+const mapStateToProps = (state) => ({
+  // email: state.loginReducer.email,
+  // password: state.loginReducer.password,
+  logged: state.loginReducer.logged,
+});
 
 const mapDispatchToProps = (dispatch) => ({
-  loggingIn: (log) => dispatch(actionLogin(log)),
+  login: (email, password) => dispatch({type: LOG_IN, email, password}),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Login);

@@ -1,4 +1,4 @@
-import LOG_IN from '../actions';
+import { LOG_IN } from '../actions';
 
 const INITIAL_STATE = {
   email: '',
@@ -8,17 +8,17 @@ const INITIAL_STATE = {
 //johndoe@gmail.com
 //iloveredux
 
-const reducer = (state = INITIAL_STATE, action) => {
+const loginReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case LOG_IN:
-      if (action.email === 'johndoe@gmail.com' && action.password === 'iloveredux') {
+      // if (action.email === '') {
         return { ...state, email: action.email, password: action.password, logged: true };
-      } else {
-        return state;
-      }
+      // } else {
+      //   return state;
+      // }
     default:
       return state;
   }
 };
 
-export default reducer;
+export default loginReducer;
