@@ -11,11 +11,13 @@ const INITIAL_STATE = {
 const loginReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case LOG_IN:
-      // if (action.email === '') {
+      // aqui condicionar para que seja um 
+      if (action.email === 'ju' && action.password === 'be') {
         return { ...state, email: action.email, password: action.password, logged: true };
-      // } else {
-      //   return state;
-      // }
+      } else {
+        return state;
+        // alert("no account, you need to register"); intuito seria de avisar isso
+      }
     default:
       return state;
   }

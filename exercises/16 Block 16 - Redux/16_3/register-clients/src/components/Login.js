@@ -1,7 +1,7 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
-import actionLogin, { LOG_IN } from '../actions';
+import actionLogin from '../actions';
 // import loginReducer from '../reducers';
 
 class Login extends React.Component {
@@ -29,7 +29,7 @@ class Login extends React.Component {
         </div>
       );
     }
-    return <Redirect to="/clients" />;
+    return <Redirect to="/client" />;
   }
 }
 
@@ -40,7 +40,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  login: (email, password) => dispatch({type: LOG_IN, email, password}),
+  login: (email, password) => dispatch(actionLogin(email, password))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Login);
