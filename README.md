@@ -99,5 +99,5 @@ The Trybe program has more than **1,500 hours** of classroom and online classes 
 - [x] 16-2: *React with Redux - part 1*
 - [x] 16-3: *Practice*
 - [x] 16-4: *React with Redux - part 2: redux-thunk*
-- [x] 16-5: *Practice*
+- [x] 16-5: *Synchronous tests with React-Redux*
 - [x] 16-6: *Project - Table with data filters*
