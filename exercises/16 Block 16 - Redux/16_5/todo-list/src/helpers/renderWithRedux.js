@@ -1,13 +1,13 @@
 import React from 'react'
-import { createStore, combineReducers } from 'redux';
+import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import { render, cleanup, fireEvent } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import App from '../App';
-import reducer from '../store/reducers/todo';
+import rootReducer from '../store/reducers';
 
 const renderWithRedux = (
   component,
-  { initialState, store = createStore(combineReducers({reducer}), initialState) } = {}
+  { initialState, store = createStore(rootReducer, initialState) } = {}
 ) => {
   return {
     ...render(<Provider store={store}>{component}</Provider>),
