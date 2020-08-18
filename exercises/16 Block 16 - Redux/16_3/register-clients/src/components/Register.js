@@ -5,24 +5,11 @@ class Register extends React.Component {
   render() {
     return (
       <div>
-      <form>
-        <label>
-        <input type="text" value="" />
-        Nome
-        </label>
-        <label>
-        <input type="text" value="" />
-        Idade
-        </label>
-        <label>
-        <input type="text" value="" />
-        Email
-        </label>
-      </form>
-      <button>Register</button>
-      <button>See registered clients
-        <Link to="/clients"/>
-      </button>
+        <input type="text" value="" placeholder="Nome"/>
+        <input type="text" value="" placeholder="Idade"/>
+        <input type="text" value="" placeholder="Email"/>
+        <button>Se cadastre</button><br />
+        <Link to="/client">Veja clientes cadastrados</Link>
       </div>
     )
   }
