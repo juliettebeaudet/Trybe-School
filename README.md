@@ -3,7 +3,7 @@ The *course-summaries* folder contains home-made compiled lessons, so they can b
 
 The Trybe program has more than **1,500 hours** of classroom and online classes and covers front-end, back-end, computer science, software engineering, agile methodologies, and soft skills.
 
-
+See our curriculum details:
 <br>
 
 ​
@@ -36,7 +36,7 @@ The Trybe program has more than **1,500 hours** of classroom and online classes 
 - [x] 5-2: *[Project - Art with Pixels](https://juliettebeaudet.github.io/pixel-art/)*
 - [x] 5-3: *[Project - To Do List](https://juliettebeaudet.github.io/to-do-list/)*
 
-## Front-end development :hourglass_flowing_sand:
+## Front-end development :white_check_mark:
 ##### Block 6: Introduction - Front-end
 - [x] 6-1: *HTML & CSS - Forms*
 - [x] 6-2: *JavaScript libraries and CSS frameworks*
@@ -101,3 +101,54 @@ The Trybe program has more than **1,500 hours** of classroom and online classes 
 - [x] 16-4: *React with Redux - part 2: redux-thunk*
 - [x] 16-5: *Synchronous tests with React-Redux*
 - [x] 16-6: *Project - Table with data filters*
+
+##### Block 17: React & Redux
+- [x] 17-1: *Project - Trivia Game*
+
+##### Block 18: React Context API & Hooks
+- [x] 18-1: *React Context API*
+- [x] 18-2: *React Hooks - useState and useContext*
+- [x] 18-3: *React Hooks - useEffect and custom Hooks*
+- [x] 18-4: *Project - Datatable StarWars with Context API and Hooks*
+
+##### Block 19: Final Front-end Project
+- [x] 19-1: *Project - Recipe App*
+
+## Back-end development :hourglass_flowing_sand:
+
+##### Block 20: Introduction to Relational Databases - SQL
+- [x] 20-1: *SQL database*
+- [x] 20-2: *Finding data in a database*
+- [x] 20-3: *Filtering data specifically*
+- [x] 20-4: *Manipulating tables*
+- [x] 20-5: *Project - All For One*
+
+##### Block 21: Relational Databases
+- [x] 21-1: *Most used functions in SQL*
+- [x] 21-2: *Uncomplicating JOINs and UNIONs*
+- [x] 21-3: *Stored Routines & Subqueries*
+- [x] 21-4: *Project - Vocabulary Booster*
+
+##### Block 22: Relational Databases
+- [x] 22-1: *Transforming ideas into a database model*
+- [x] 22-2: *Transforming ideas into a database model - Part 2*
+- [x] 22-3: *Normalization and Normal Forms*
+- [x] 22-4: *Project - One For All*
+
+##### Block 23: Introduction - NoSQL
+- [x] 23-1: *MongoDB - Introduction*
+- [x] 23-2: *Filter Operators*
+- [x] 24-3: *Project - Data Flights*
+
+##### Block 24: Updates
+- [x] 24-1: *Simple Updates*
+- [x] 24-2: *Complex Updates - Arrays - Part 1*
+- [x] 24-3: *Complex Updates - Arrays - Part 2*
+- [x] 24-4: *Project - Commerce*
+
+##### Block 25: Aggregation Framework
+- [x] 25-1: *Aggregation Framework - Part 1*
+- [x] 25-2: *Aggregation Framework - Part 2*
+- [x] 25-3: *Project - Aggregations*
+
+
