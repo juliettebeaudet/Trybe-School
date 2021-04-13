@@ -3,7 +3,7 @@
 This repository contains two folders and a readme, all created while studying at [Trybe](https://www.betrybe.com/). <br>
 The *course-summaries* folder contains home-made compiled lessons, so they can be consulted by peer students. <br>
 The *exercises* folder displays some of the initial developed learning activities.<br>
-Finally, the present readme displays all the delivered projects.
+Finally, the present readme displays all the *delivered projects*.
 
 The Trybe program has more than **1,500 hours** of classroom and online classes and covers front-end, back-end, computer science, software engineering, agile methodologies and soft skills.
 
@@ -66,48 +66,48 @@ See our curriculum details and associated training projects:
 
 ## Back-end development :white_check_mark:
 
-##### Block 20: Introduction to Relational Databases - SQL
-- [x] *Project - All For One*
+##### Block 20: Introduction to Relational Databases - MySQL
+- [x] *[Project - All For One](https://github.com/tryber/sd-05-mysql-all-for-one/pull/4)*
 
-##### Block 21: Relational Databases
-- [x] *Project - Vocabulary Booster*
+##### Block 21: Relational Databases - SQL functions, Joins e Subqueries
+- [x] *[Project - Vocabulary Booster](https://github.com/tryber/sd-05-mysql-vocabulary-booster/pull/6)*
 
-##### Block 22: Relational Databases
-- [x] *Project - One For All*
+##### Block 22: Databases modeling
+- [x] *[Project - One For All](https://github.com/tryber/sd-05-mysql-one-for-all/pull/5)*
 
-##### Block 23: Introduction - NoSQL
-- [x] *Project - Data Flights*
+##### Block 23: Introduction to Non-Relational Databases - MongoDB
+- [x] *[Project - Data Flights](https://github.com/tryber/sd-05-project-mongodb-dataflights/pull/2)*
 
-##### Block 24: Updates
-- [x] *Project - Commerce*
+##### Block 24: MongoDB - Updates
+- [x] *[Project - Commerce](https://github.com/tryber/sd-05-mongodb-commerce/pull/19)*
 
-##### Block 25: Aggregation Framework
-- [x] *Project - Aggregations*
+##### Block 25: MongoDB - Aggregation Framework
+- [x] *[Project - Aggregations](https://github.com/tryber/sd-05-project-mongodb-aggregations/pull/2)*
 
 ##### Block 26: NodeJS - Express and MVC Architecture
-- [x] *Project - Cookmaster*
+- [x] *[Project - Crush Manager](https://github.com/tryber/sd-05-project-crush-manager/pull/4/files)*
 
 ##### Block 27: NodeJS - Service Layer and RESTful Architecture
-- [x] *Project - Store Manager*
+- [x] *[Project - Store Manager](https://github.com/tryber/sd-05-store-manager/pull/6)*
 
 ##### Block 28: NodeJS - Authentication and File Upload
-- [x] *Project - Cookmaster V2*
+- [x] *[Project - Cookmaster](https://github.com/tryber/sd-05-cookmaster/pull/4)*
 
 ##### Block 29: NodeJS - Heroku Deployment
-- [x] *Project - Stranger Things: Backend*
-- [x] *Project - Stranger Things: Frontend*
+- [x] *[Project - Stranger Things: Backend](https://github.com/tryber/sd-05-stranger-things-frontend/pull/12)*
+- [x] *[Project - Stranger Things: Frontend](https://github.com/tryber/sd-05-stranger-things-backend/pull/7)*
 
 ##### Block 30: Full-stack project
-- [x] *Project - Trybeer*
+- [x] *[Group Project - Trybeer](https://github.com/tryber/sd-05-trybeer/pull/21)*
 
 ##### Block 31: NodeJS - Architecture: SOLID and ORM
-- [x] *Project - Blogs API*
+- [x] *[Project - Blogs API](https://github.com/tryber/sd-05-project-blogs-api/pull/14)*
 
 ##### Block 32: NodeJS - Sockets
-- [x] *Project - Webchat*
+- [x] *[Project - Webchat](https://github.com/tryber/sd-05-project-webchat/pull/8)*
 
 ##### Block 33: V2 of Full-stack project
-- [x] *Project - Trybeer V2*
+- [x] *[Group Project - Trybeer V2](https://github.com/tryber/sd-05-project-trybeer-v2/pull/7)*
 
 ## Computer Science :hourglass_flowing_sand: 
 
