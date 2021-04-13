@@ -23,7 +23,7 @@ See our curriculum details and associated training projects:
 
 ## Front-end development :white_check_mark:
 ##### Block 6: Introduction - Front-end
-- [x] *[Project - Facebook signup page](https://juliettebeaudet.github.io/facebook/)*
+- [x] *[Pair Programming Project - Facebook signup page](https://juliettebeaudet.github.io/facebook/)*
 
 ##### Block 7: Javascript ES6
 - [x] *[Project - Unit tests practice with npm](https://github.com/tryber/sd-05-block7-project-js-unit-tests/pull/21)*
@@ -56,13 +56,13 @@ See our curriculum details and associated training projects:
 - [x] *[Project - Table with data filters](https://github.com/tryber/sd-05-block16-project-react-redux-starwars-database-filters/pull/14)*
 
 ##### Block 17: React & Redux
-- [x] *[Project - Trivia Game](https://github.com/tryber/sd-05-project-trivia-react-redux-8)*
+- [x] *[Group Project - Trivia Game](https://github.com/tryber/sd-05-project-trivia-react-redux-8)*
 
 ##### Block 18: React Context API & Hooks
 - [x] *[Project - Datatable StarWars with Context API and Hooks](https://github.com/tryber/sd-05-project-starwars-datatable-hooks/pull/12)*
 
 ##### Block 19: Final Front-end Project
-- [x] *[Project - Recipe App](https://github.com/tryber/sd-05-recipes-app-3)*
+- [x] *[Group Project - Recipe App](https://github.com/tryber/sd-05-recipes-app-3)*
 
 ## Back-end development :white_check_mark:
 
@@ -112,16 +112,16 @@ See our curriculum details and associated training projects:
 ## Computer Science :hourglass_flowing_sand: 
 
 ##### Block 34: Computer Architecture and Network
-- [x] *Project - Exploring the protocols*
+- [x] *[Project - Exploring the protocols](https://github.com/tryber/sd-05-project-exploring-the-protocols/pull/1)*
 
 ##### Block 35: Python and Web Data Scraping
-- [x] *Project - Tech News*
+- [x] *[Project - Tech News](https://github.com/tryber/sd-05-tech-news/pull/10)*
 
 ##### Block 36: Object Oriented Programming and Design Patterns
-- [x] *Project - Inventory Reports*
+- [x] *[Project - Inventory Reports](https://github.com/tryber/sd-05-inventory-report/pull/6)*
 
 ##### Block 37: Algorithms and Data Structure
-- [x] *Project - Algorithms*
+- [x] *[Project - Algorithms](https://github.com/tryber/sd-05-project-algorithms/pull/6)*
 
 ##### Block 38: Data Structure: Hash and Set
 - [ ] *Project - Restaurant Orders*
