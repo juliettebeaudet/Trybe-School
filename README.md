@@ -81,4 +81,47 @@ See our curriculum details:
 ##### Block 25: Aggregation Framework
 - [x] *Project - Aggregations*
 
+##### Block 26: NodeJS - Express and MVC Architecture
+- [x] *Project - Cookmaster*
 
+##### Block 27: NodeJS - Service Layer and RESTful Architecture
+- [x] *Project - Store Manager*
+
+##### Block 28: NodeJS - Authentication and File Upload
+- [x] *Project - Cookmaster V2*
+
+##### Block 29: NodeJS - Heroku Deployment
+- [x] *Project - Stranger Things: Backend*
+- [x] *Project - Stranger Things: Frontend*
+
+##### Block 30: Full-stack project
+- [x] *Project - Trybeer*
+
+##### Block 31: NodeJS - Architecture: SOLID and ORM
+- [x] *Project - Blogs API*
+
+##### Block 32: NodeJS - Sockets
+- [x] *Project - Webchat*
+
+##### Block 33: V2 of Full-stack project
+- [x] *Project - Trybeer V2*
+
+## Computer Science :hourglass_flowing_sand: 
+
+##### Block 34: Computer Architecture and Network
+- [x] *Project - Exploring the protocols*
+
+##### Block 35: Python and Web Data Scraping
+- [x] *Project - Tech News*
+
+##### Block 36: Object Oriented Programming and Design Patterns
+- [x] *Project - Inventory Reports*
+
+##### Block 37: Algorithms and Data Structure
+- [x] *Project - Algorithms*
+
+##### Block 38: Data Structure: Hash and Set
+- [ ] *Project - Restaurant Orders*
+
+##### Block 39: Data Structure: Stacks, Queues and Lists
+- [ ] *Project - Trybe Is Not Google*
