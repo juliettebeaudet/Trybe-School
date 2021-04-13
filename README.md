@@ -128,3 +128,8 @@ See our curriculum details and associated training projects:
 
 ##### Block 39: Data Structure: Stacks, Queues and Lists
 - [ ] *Project - Trybe Is Not Google*
+
+
+
+<br><br><br>
+*Acknowledgment to Trybe student [Debora Silveira](https://github.com/deboracosilveira) for offering this readme standard md.*
