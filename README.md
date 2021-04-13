@@ -1,3 +1,5 @@
+# Full-Stack Trybe School
+
 This repository contains two folders, both created while studying at [Trybe](https://www.betrybe.com/).
 The *course-summaries* folder contains home-made compiled lessons, so they can be consulted by peer students, whereas the *exercises* folder displays some of the initial developed learning activities.
 
