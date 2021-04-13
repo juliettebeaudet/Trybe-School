@@ -25,28 +25,28 @@ See our curriculum details and associated training projects:
 - [x] *[Project - Facebook signup page](https://juliettebeaudet.github.io/facebook/)*
 
 ##### Block 7: Javascript ES6
-- [x] *Project - Unit tests practice with npm*
+- [x] *[Project - Unit tests practice with npm](https://github.com/tryber/sd-05-block7-project-js-unit-tests/pull/21)*
 
 ##### Block 8: Javascript Higher Order Functions (HOFs)
-- [x] *Project - Zoo Functions*
+- [x] *[Project - Zoo Functions](https://github.com/tryber/sd-05-block8-project-zoo-functions/pull/10)*
 
 ##### Block 9: Jest, Javascript asynchronous, callbacks and promises
-- [x] *Project - Shopping Cart*
+- [x] *[Project - Shopping Cart](https://github.com/tryber/sd-05-block9-project-shopping-cart/pull/11)*
 
 ##### Block 10: Testing asynchronous code with Jest
-- [x] *Project - asynchronous jest and mocking*
+- [x] *[Project - asynchronous jest and mocking](https://github.com/tryber/sd-05-block10-project-jest/pull/11)*
 
-##### Block 11: React
-- [x] *Project - Movie Cards Library*
+##### Block 11: Intro to React
+- [x] *[Project - Movie Cards Library](https://github.com/tryber/sd-05-block11-project-movie-cards-library/pull/10)*
 
-##### Block 12: React
-- [x] *Project - Movie Cards Library Stateful*
+##### Block 12: React with States
+- [x] *[Project - Movie Cards Library Stateful](https://github.com/tryber/sd-05-block12-project-movie-card-library-stateful/pull/7)*
 
-##### Block 13: React
-- [x] *Project - Movie Cards Library CRUD*
+##### Block 13: React with CRUD
+- [x] *[Project - Movie Cards Library CRUD](https://github.com/tryber/sd-05-block13-project-movie-card-library-crud/pull/13)*
 
 ##### Block 14: Agile Methodologies
-- [x] *Group Project - Frontend Online Store*
+- [x] *[Group Project - Frontend Online Store](https://github.com/tryber/sd-05-block14-project-frontend-online-store-4)*
 
 ##### Block 15: React Testing Library
 - [x] *Project - React Tests*
