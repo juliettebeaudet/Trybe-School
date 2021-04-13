@@ -1,13 +1,14 @@
-# Full-Stack Trybe School
+# All Trybe School Activities
 
-This repository contains two folders, both created while studying at [Trybe](https://www.betrybe.com/).
-The *course-summaries* folder contains home-made compiled lessons, so they can be consulted by peer students, whereas the *exercises* folder displays some of the initial developed learning activities.
+This repository contains two folders and a readme, all created while studying at [Trybe](https://www.betrybe.com/). <br>
+The *course-summaries* folder contains home-made compiled lessons, so they can be consulted by peer students. <br>
+The *exercises* folder displays some of the initial developed learning activities.<br>
+Finally, the present readme displays all the delivered projects.
 
 The Trybe program has more than **1,500 hours** of classroom and online classes and covers front-end, back-end, computer science, software engineering, agile methodologies and soft skills.
 
 See our curriculum details and associated training projects:
 <br>
-
 ​
 ## Introduction - Web Development :white_check_mark:
 ##### Block 1: Introduction - Unix & Shell
@@ -49,19 +50,19 @@ See our curriculum details and associated training projects:
 - [x] *[Group Project - Frontend Online Store](https://github.com/tryber/sd-05-block14-project-frontend-online-store-4)*
 
 ##### Block 15: React Testing Library
-- [x] *Project - React Tests*
+- [x] *[Project - React Tests](https://github.com/tryber/sd-05-block15-project-react-testing-library/pull/13)*
 
 ##### Block 16: Redux
-- [x] *Project - Table with data filters*
+- [x] *[Project - Table with data filters](https://github.com/tryber/sd-05-block16-project-react-redux-starwars-database-filters/pull/14)*
 
 ##### Block 17: React & Redux
-- [x] *Project - Trivia Game*
+- [x] *[Project - Trivia Game](https://github.com/tryber/sd-05-project-trivia-react-redux-8)*
 
 ##### Block 18: React Context API & Hooks
-- [x] *Project - Datatable StarWars with Context API and Hooks*
+- [x] *[Project - Datatable StarWars with Context API and Hooks](https://github.com/tryber/sd-05-project-starwars-datatable-hooks/pull/12)*
 
 ##### Block 19: Final Front-end Project
-- [x] *Project - Recipe App*
+- [x] *[Project - Recipe App](https://github.com/tryber/sd-05-recipes-app-3)*
 
 ## Back-end development :white_check_mark:
 
