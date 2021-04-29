@@ -109,7 +109,7 @@ See our curriculum details and associated training projects:
 ##### Block 33: V2 of Full-stack project
 - [x] *[Group Project - Trybeer V2](https://github.com/tryber/sd-05-project-trybeer-v2/pull/7)*
 
-## Computer Science :hourglass_flowing_sand: 
+## Computer Science :white_check_mark:
 
 ##### Block 34: Computer Architecture and Network
 - [x] *[Project - Exploring the protocols](https://github.com/tryber/sd-05-project-exploring-the-protocols/pull/1)*
@@ -124,10 +124,10 @@ See our curriculum details and associated training projects:
 - [x] *[Project - Algorithms](https://github.com/tryber/sd-05-project-algorithms/pull/6)*
 
 ##### Block 38: Data Structure: Hash and Set
-- [ ] *Project - Restaurant Orders*
+- [X] *[Project - Restaurant Orders](https://github.com/tryber/sd-05-restaurant-orders/pull/10)*
 
 ##### Block 39: Data Structure: Stacks, Queues and Lists
-- [ ] *Project - Trybe Is Not Google*
+- [X] *[Project - Trybe Is Not Google](https://github.com/tryber/sd-05-project-ting/pull/2)*
 
 
 
