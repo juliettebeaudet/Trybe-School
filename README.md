@@ -98,7 +98,7 @@ See our curriculum details and associated training projects:
 - [x] *[Project - Stranger Things: Frontend](https://github.com/tryber/sd-05-stranger-things-backend/pull/7)*
 
 ##### Block 30: Full-stack project
-- [x] *[Group Project - Trybeer](https://github.com/tryber/sd-05-trybeer/pull/21)*
+- [x] *[Group Project - Trybeer](https://github.com/juliettebeaudet/trybeer)*
 
 ##### Block 31: NodeJS - Architecture: SOLID and ORM
 - [x] *[Project - Blogs API](https://github.com/tryber/sd-05-project-blogs-api/pull/14)*
